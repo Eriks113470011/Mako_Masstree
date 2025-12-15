@@ -1,0 +1,9 @@
+/target
+.vscode
+*.out
+*.swp
+tests/build/
+build/*
+*.lock
+
+build-tests/

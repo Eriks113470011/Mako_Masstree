@@ -1,0 +1,527 @@
+20251114-13:32.59-842183(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:78] 2025-12-14 13:32:59.860 | PWD : /home/eriks972/mako
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:276] 2025-12-14 13:32:59.860 | starting process 27459
+I [/home/eriks972/mako/src/deptran/config.cc:290] 2025-12-14 13:32:59.860 | LoadYML: /home/eriks972/mako/examples/../config/1leader_2followers/paxos6_shardidx1.yml
+I [/home/eriks972/mako/src/deptran/config.cc:290] 2025-12-14 13:32:59.865 | LoadYML: /home/eriks972/mako/examples/../config/occ_paxos.yml
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:285] 2025-12-14 13:32:59.867 | server_infos, number of sites: 6, proc_name: learner
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:33:00.248 | parition id of each Paxos group is 5, site-name: s406, site-id: 23
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:33:00.538 | parition id of each Paxos group is 4, site-name: s405, site-id: 19
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:33:00.845 | parition id of each Paxos group is 3, site-name: s404, site-id: 15
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:33:01.217 | parition id of each Paxos group is 2, site-name: s403, site-id: 11
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:33:01.677 | parition id of each Paxos group is 1, site-name: s402, site-id: 7
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:33:02.106 | parition id of each Paxos group is 0, site-name: s401, site-id: 3
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:297] 2025-12-14 13:33:02.106 | running machine-id: 3
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:33:02.111 | launching site: 3, bind address 0.0.0.0:18301
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:33:02.116 | launching site: 7, bind address 0.0.0.0:18302
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:33:02.131 | launching site: b, bind address 0.0.0.0:18303
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:33:02.133 | [service]loc_id: 3, name: s401, proc: learner, id: 3
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:33:02.138 | [service]loc_id: 3, name: s402, proc: learner, id: 7
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:33:02.141 | launching site: f, bind address 0.0.0.0:18304
+starting server at 0.0.0.0:18301
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:33:02.153 | [service]loc_id: 3, name: s403, proc: learner, id: 11
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:33:02.156 | [service]loc_id: 3, name: s404, proc: learner, id: 15
+starting server at 0.0.0.0:18302
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:33:02.166 | Server s401 ready at 0.0.0.0:18301
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:33:02.168 | Server s402 ready at 0.0.0.0:18302
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:33:02.169 | launching site: 13, bind address 0.0.0.0:18305
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:33:02.172 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:33:02.173 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:02.173 | connect to site: 127.0.0.1:18001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:106] 2025-12-14 13:33:02.174 | waiting for server setup threads.
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:33:02.175 | launching site: 17, bind address 0.0.0.0:18306
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:02.175 | connect to site: 127.0.0.1:18001 (attempt 0)
+starting server at 0.0.0.0:18304
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:02.179 | rrr::Client: connect(127.0.0.1:18001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:02.179 | rrr::Client: connect(127.0.0.1:18001): Connection refused
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:33:02.184 | Server s404 ready at 0.0.0.0:18304
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:33:02.185 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:02.186 | connect to site: 127.0.0.1:18001 (attempt 0)
+starting server at 0.0.0.0:18303
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:02.197 | rrr::Client: connect(127.0.0.1:18001): Connection refused
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:33:02.198 | Server s403 ready at 0.0.0.0:18303
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:33:02.199 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:02.200 | connect to site: 127.0.0.1:18001 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:02.202 | rrr::Client: connect(127.0.0.1:18001): Connection refused
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:33:02.209 | [service]loc_id: 3, name: s406, proc: learner, id: 23
+starting server at 0.0.0.0:18306
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:33:02.221 | Server s406 ready at 0.0.0.0:18306
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:33:02.224 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:02.226 | connect to site: 127.0.0.1:18001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:33:02.233 | [service]loc_id: 3, name: s405, proc: learner, id: 19
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:02.232 | rrr::Client: connect(127.0.0.1:18001): Connection refused
+starting server at 0.0.0.0:18305
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:33:02.277 | Server s405 ready at 0.0.0.0:18305
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:33:02.278 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:02.278 | connect to site: 127.0.0.1:18001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:02.293 | connect to site: 127.0.0.1:18101 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:02.295 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:03.181 | connect to site: 127.0.0.1:18001 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:03.183 | connect to site: 127.0.0.1:18101 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:03.184 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:03.184 | connect to site: 127.0.0.1:18001 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:03.185 | connect to site: 127.0.0.1:18101 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:03.186 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:03.199 | connect to site: 127.0.0.1:18001 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:03.201 | connect to site: 127.0.0.1:18101 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:03.202 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:03.204 | connect to site: 127.0.0.1:18001 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:03.205 | connect to site: 127.0.0.1:18101 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:03.206 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:03.235 | connect to site: 127.0.0.1:18001 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:03.236 | connect to site: 127.0.0.1:18101 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:03.237 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:03.297 | connect to site: 127.0.0.1:18101 (attempt 1)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:03.298 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:04.186 | connect to site: 127.0.0.1:18101 (attempt 1)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.187 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:04.187 | connect to site: 127.0.0.1:18101 (attempt 1)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.189 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:04.204 | connect to site: 127.0.0.1:18101 (attempt 1)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.206 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:04.210 | connect to site: 127.0.0.1:18101 (attempt 1)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.212 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:04.238 | connect to site: 127.0.0.1:18101 (attempt 1)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.240 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:04.300 | connect to site: 127.0.0.1:18101 (attempt 2)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.300 | rrr::Client: connect(127.0.0.1:18101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.197 | connect to site: 127.0.0.1:18101 (attempt 2)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.199 | connect to site: 127.0.0.1:18201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.199 | connect to site: 127.0.0.1:18301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.200 | connect to site: 127.0.0.1:18101 (attempt 2)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.201 | connect to site: 127.0.0.1:18201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.202 | connect to site: 127.0.0.1:18301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.203 | connect to site: 127.0.0.1:18002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.203 | connect to site: 127.0.0.1:18102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.204 | connect to site: 127.0.0.1:18202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.205 | connect to site: 127.0.0.1:18302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.206 | connect to site: 127.0.0.1:18003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.206 | connect to site: 127.0.0.1:18103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.207 | connect to site: 127.0.0.1:18203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.208 | connect to site: 127.0.0.1:18303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.209 | connect to site: 127.0.0.1:18004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.211 | connect to site: 127.0.0.1:18101 (attempt 2)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.212 | connect to site: 127.0.0.1:18201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.213 | connect to site: 127.0.0.1:18301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.214 | connect to site: 127.0.0.1:18101 (attempt 2)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.214 | connect to site: 127.0.0.1:18002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.215 | connect to site: 127.0.0.1:18201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.215 | connect to site: 127.0.0.1:18102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.216 | connect to site: 127.0.0.1:18301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.216 | connect to site: 127.0.0.1:18202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.216 | connect to site: 127.0.0.1:18002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.217 | connect to site: 127.0.0.1:18302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.217 | connect to site: 127.0.0.1:18102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.218 | connect to site: 127.0.0.1:18003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.218 | connect to site: 127.0.0.1:18202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.218 | connect to site: 127.0.0.1:18103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.220 | connect to site: 127.0.0.1:18203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.219 | connect to site: 127.0.0.1:18302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.220 | connect to site: 127.0.0.1:18303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.221 | connect to site: 127.0.0.1:18004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.222 | connect to site: 127.0.0.1:18003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.222 | connect to site: 127.0.0.1:18104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.223 | connect to site: 127.0.0.1:18204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.223 | connect to site: 127.0.0.1:18103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.224 | connect to site: 127.0.0.1:18304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.224 | connect to site: 127.0.0.1:18203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.225 | connect to site: 127.0.0.1:18002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.226 | connect to site: 127.0.0.1:18102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.227 | connect to site: 127.0.0.1:18202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.227 | connect to site: 127.0.0.1:18303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.228 | connect to site: 127.0.0.1:18004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.228 | connect to site: 127.0.0.1:18302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.229 | connect to site: 127.0.0.1:18003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.234 | connect to site: 127.0.0.1:18103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.236 | connect to site: 127.0.0.1:18203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.237 | connect to site: 127.0.0.1:18303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.242 | connect to site: 127.0.0.1:18101 (attempt 2)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.243 | connect to site: 127.0.0.1:18201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.243 | connect to site: 127.0.0.1:18104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.244 | connect to site: 127.0.0.1:18104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.244 | connect to site: 127.0.0.1:18301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.245 | connect to site: 127.0.0.1:18002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.245 | connect to site: 127.0.0.1:18204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.246 | connect to site: 127.0.0.1:18102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.246 | connect to site: 127.0.0.1:18304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.246 | connect to site: 127.0.0.1:18202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.247 | connect to site: 127.0.0.1:18005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.247 | connect to site: 127.0.0.1:18302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.247 | connect to site: 127.0.0.1:18204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.252 | connect to site: 127.0.0.1:18004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.253 | connect to site: 127.0.0.1:18104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.255 | connect to site: 127.0.0.1:18005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.256 | connect to site: 127.0.0.1:18105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.259 | connect to site: 127.0.0.1:18003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.262 | connect to site: 127.0.0.1:18103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.262 | connect to site: 127.0.0.1:18204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.265 | connect to site: 127.0.0.1:18105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.266 | connect to site: 127.0.0.1:18203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.266 | connect to site: 127.0.0.1:18205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.271 | connect to site: 127.0.0.1:18304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.273 | connect to site: 127.0.0.1:18304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.280 | connect to site: 127.0.0.1:18205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.281 | connect to site: 127.0.0.1:18303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.281 | connect to site: 127.0.0.1:18305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.284 | connect to site: 127.0.0.1:18004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.288 | connect to site: 127.0.0.1:18005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.289 | connect to site: 127.0.0.1:18006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.292 | connect to site: 127.0.0.1:18104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.295 | connect to site: 127.0.0.1:18305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.299 | connect to site: 127.0.0.1:18106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.299 | connect to site: 127.0.0.1:18204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.300 | connect to site: 127.0.0.1:18206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.300 | connect to site: 127.0.0.1:18306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:33:05.301 | site 3 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.303 | connect to site: 127.0.0.1:18101 (attempt 3)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.303 | connect to site: 127.0.0.1:18006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.304 | connect to site: 127.0.0.1:18201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.304 | connect to site: 127.0.0.1:18105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.305 | connect to site: 127.0.0.1:18301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.306 | connect to site: 127.0.0.1:18002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.307 | connect to site: 127.0.0.1:18102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.310 | connect to site: 127.0.0.1:18205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.313 | connect to site: 127.0.0.1:18106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.316 | connect to site: 127.0.0.1:18304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.321 | connect to site: 127.0.0.1:18005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.335 | connect to site: 127.0.0.1:18305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.338 | connect to site: 127.0.0.1:18206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.340 | connect to site: 127.0.0.1:18006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.346 | connect to site: 127.0.0.1:18202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.346 | connect to site: 127.0.0.1:18106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.346 | connect to site: 127.0.0.1:18105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.347 | connect to site: 127.0.0.1:18302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.347 | connect to site: 127.0.0.1:18205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.348 | connect to site: 127.0.0.1:18003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.348 | connect to site: 127.0.0.1:18305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.351 | connect to site: 127.0.0.1:18006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.351 | connect to site: 127.0.0.1:18103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.353 | connect to site: 127.0.0.1:18106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.354 | connect to site: 127.0.0.1:18005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.354 | connect to site: 127.0.0.1:18206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.354 | connect to site: 127.0.0.1:18105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.359 | connect to site: 127.0.0.1:18306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:33:05.376 | site 15 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.376 | connect to site: 127.0.0.1:18205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.386 | connect to site: 127.0.0.1:18306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.389 | connect to site: 127.0.0.1:18206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.391 | connect to site: 127.0.0.1:18305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.396 | connect to site: 127.0.0.1:18203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.398 | connect to site: 127.0.0.1:18306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:33:05.407 | site 23 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.409 | connect to site: 127.0.0.1:18303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.412 | connect to site: 127.0.0.1:18006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:33:05.417 | site 7 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.434 | connect to site: 127.0.0.1:18004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.436 | connect to site: 127.0.0.1:18106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.461 | connect to site: 127.0.0.1:18206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.467 | connect to site: 127.0.0.1:18104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.473 | connect to site: 127.0.0.1:18306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.478 | connect to site: 127.0.0.1:18204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:33:05.477 | site 11 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.522 | connect to site: 127.0.0.1:18304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.526 | connect to site: 127.0.0.1:18005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.534 | connect to site: 127.0.0.1:18105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.544 | connect to site: 127.0.0.1:18205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.559 | connect to site: 127.0.0.1:18305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.585 | connect to site: 127.0.0.1:18006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.596 | connect to site: 127.0.0.1:18106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.602 | connect to site: 127.0.0.1:18206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:05.606 | connect to site: 127.0.0.1:18306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:33:05.610 | site 19 launched!
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:110] 2025-12-14 13:33:05.616 | done waiting for server setup threads.
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:05.619 | heartbeat setup for s401 on 0.0.0.0:28301
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:05.632 | heartbeat setup for s402 on 0.0.0.0:28302
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:05.638 | heartbeat setup for s403 on 0.0.0.0:28303
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:05.647 | heartbeat setup for s404 on 0.0.0.0:28304
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:05.671 | heartbeat setup for s405 on 0.0.0.0:28305
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:05.729 | heartbeat setup for s406 on 0.0.0.0:28306
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:117] 2025-12-14 13:33:05.729 | server workers' communicators setup
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:756] 2025-12-14 13:33:05.905 | start a heartbeatBackground, addr:127.0.0.1:28001
+tpcc settings:
+  cross_partition_transactions : 1
+  read_only_snapshots          : 1
+  partition_locks              : 0
+  separate_tree_per_partition  : 1
+  new_order_remote_item_pct    : 1
+  new_order_fast_id_gen        : 1
+  uniform_item_dist            : 0
+  order_status_scan_hack       : 0
+  workload_mix                 : [45, 43, 4, 4, 4]
+reinitializing partitions under failure
+reinitializing partitions under failure - DONE
+new table is createded with name: customer_remote_1, table-id: 1, on shard-server id:0
+new table is createded with name: customer_remote_2, table-id: 2, on shard-server id:0
+new table is createded with name: customer_remote_3, table-id: 3, on shard-server id:0
+new table is createded with name: customer_remote_4, table-id: 4, on shard-server id:0
+new table is createded with name: customer_remote_5, table-id: 5, on shard-server id:0
+new table is createded with name: customer_remote_6, table-id: 6, on shard-server id:0
+new table is createded with name: customer_name_idx_remote_1, table-id: 7, on shard-server id:0
+new table is createded with name: customer_name_idx_remote_2, table-id: 8, on shard-server id:0
+new table is createded with name: customer_name_idx_remote_3, table-id: 9, on shard-server id:0
+new table is createded with name: customer_name_idx_remote_4, table-id: 10, on shard-server id:0
+new table is createded with name: customer_name_idx_remote_5, table-id: 11, on shard-server id:0
+new table is createded with name: customer_name_idx_remote_6, table-id: 12, on shard-server id:0
+new table is createded with name: district_remote_1, table-id: 13, on shard-server id:0
+new table is createded with name: district_remote_2, table-id: 14, on shard-server id:0
+new table is createded with name: district_remote_3, table-id: 15, on shard-server id:0
+new table is createded with name: district_remote_4, table-id: 16, on shard-server id:0
+new table is createded with name: district_remote_5, table-id: 17, on shard-server id:0
+new table is createded with name: district_remote_6, table-id: 18, on shard-server id:0
+new table is createded with name: history_remote_1, table-id: 19, on shard-server id:0
+new table is createded with name: history_remote_2, table-id: 20, on shard-server id:0
+new table is createded with name: history_remote_3, table-id: 21, on shard-server id:0
+new table is createded with name: history_remote_4, table-id: 22, on shard-server id:0
+new table is createded with name: history_remote_5, table-id: 23, on shard-server id:0
+new table is createded with name: history_remote_6, table-id: 24, on shard-server id:0
+new table is createded with name: new_order_remote_1, table-id: 25, on shard-server id:0
+new table is createded with name: new_order_remote_2, table-id: 26, on shard-server id:0
+new table is createded with name: new_order_remote_3, table-id: 27, on shard-server id:0
+new table is createded with name: new_order_remote_4, table-id: 28, on shard-server id:0
+new table is createded with name: new_order_remote_5, table-id: 29, on shard-server id:0
+new table is createded with name: new_order_remote_6, table-id: 30, on shard-server id:0
+new table is createded with name: oorder_remote_1, table-id: 31, on shard-server id:0
+new table is createded with name: oorder_remote_2, table-id: 32, on shard-server id:0
+new table is createded with name: oorder_remote_3, table-id: 33, on shard-server id:0
+new table is createded with name: oorder_remote_4, table-id: 34, on shard-server id:0
+new table is createded with name: oorder_remote_5, table-id: 35, on shard-server id:0
+new table is createded with name: oorder_remote_6, table-id: 36, on shard-server id:0
+new table is createded with name: oorder_c_id_idx_remote_1, table-id: 37, on shard-server id:0
+new table is createded with name: oorder_c_id_idx_remote_2, table-id: 38, on shard-server id:0
+new table is createded with name: oorder_c_id_idx_remote_3, table-id: 39, on shard-server id:0
+new table is createded with name: oorder_c_id_idx_remote_4, table-id: 40, on shard-server id:0
+new table is createded with name: oorder_c_id_idx_remote_5, table-id: 41, on shard-server id:0
+new table is createded with name: oorder_c_id_idx_remote_6, table-id: 42, on shard-server id:0
+new table is createded with name: order_line_remote_1, table-id: 43, on shard-server id:0
+new table is createded with name: order_line_remote_2, table-id: 44, on shard-server id:0
+new table is createded with name: order_line_remote_3, table-id: 45, on shard-server id:0
+new table is createded with name: order_line_remote_4, table-id: 46, on shard-server id:0
+new table is createded with name: order_line_remote_5, table-id: 47, on shard-server id:0
+new table is createded with name: order_line_remote_6, table-id: 48, on shard-server id:0
+new table is createded with name: stock_remote_1, table-id: 49, on shard-server id:0
+new table is createded with name: stock_remote_2, table-id: 50, on shard-server id:0
+new table is createded with name: stock_remote_3, table-id: 51, on shard-server id:0
+new table is createded with name: stock_remote_4, table-id: 52, on shard-server id:0
+new table is createded with name: stock_remote_5, table-id: 53, on shard-server id:0
+new table is createded with name: stock_remote_6, table-id: 54, on shard-server id:0
+new table is createded with name: stock_data_remote_1, table-id: 55, on shard-server id:0
+new table is createded with name: stock_data_remote_2, table-id: 56, on shard-server id:0
+new table is createded with name: stock_data_remote_3, table-id: 57, on shard-server id:0
+new table is createded with name: stock_data_remote_4, table-id: 58, on shard-server id:0
+new table is createded with name: stock_data_remote_5, table-id: 59, on shard-server id:0
+new table is createded with name: stock_data_remote_6, table-id: 60, on shard-server id:0
+new table is createded with name: warehouse_remote_1, table-id: 61, on shard-server id:0
+new table is createded with name: warehouse_remote_2, table-id: 62, on shard-server id:0
+new table is createded with name: warehouse_remote_3, table-id: 63, on shard-server id:0
+new table is createded with name: warehouse_remote_4, table-id: 64, on shard-server id:0
+new table is createded with name: warehouse_remote_5, table-id: 65, on shard-server id:0
+new table is createded with name: warehouse_remote_6, table-id: 66, on shard-server id:0
+new table is createded with name: item_remote_1, table-id: 67, on shard-server id:0
+new table is createded with name: item_remote_2, table-id: 68, on shard-server id:0
+new table is createded with name: item_remote_3, table-id: 69, on shard-server id:0
+new table is createded with name: item_remote_4, table-id: 70, on shard-server id:0
+new table is createded with name: item_remote_5, table-id: 71, on shard-server id:0
+new table is createded with name: item_remote_6, table-id: 72, on shard-server id:0
+20251114-13:33.09-324895(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.09-394295(us) 27459 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.09-405841(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.09-435412(us) 27459 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.09-437200(us) 27459 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:34112 (listening on 0.0.0.0:34112)
+20251114-13:33.09-446072(us) 27459 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:34112
+20251114-13:33.09-447322(us) 27459 * RunEventLoop    (rrr_rpc_backend.cc:518): RrrRpcBackend::RunEventLoop: Starting event loop
+20251114-13:33.09-448106(us) 27459 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:34111 (listening on 0.0.0.0:34111)
+20251114-13:33.09-448820(us) 27459 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:34111
+20251114-13:33.09-449783(us) 27459 * RunEventLoop    (rrr_rpc_backend.cc:518): RrrRpcBackend::RunEventLoop: Starting event loop
+20251114-13:33.09-579786(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.09-645574(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.09-658137(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.09-683779(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.09-688271(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.09-740214(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.09-744917(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.09-799216(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.09-810185(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.09-927450(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.10-66423(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.10-281506(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.10-464139(us) 27459 ! modeMonitor     (common2.h:93):     start for modeMonitor, running:0
+start worker:1680071
+=== Mako Transaction Tests  ===
+allocator::Initialize()
+  hugepgsize: 2097152
+  use MADV_WILLNEED: 1
+  mmap() region [0x7f6b06ffe000, 0x7f6b479fe000)
+cpu0 owns [0x7f6b07000000, 0x7f6b11c00000)
+cpu1 owns [0x7f6b11c00000, 0x7f6b1c800000)
+cpu2 owns [0x7f6b1c800000, 0x7f6b27400000)
+cpu3 owns [0x7f6b27400000, 0x7f6b32000000)
+cpu4 owns [0x7f6b32000000, 0x7f6b3cc00000)
+cpu5 owns [0x7f6b3cc00000, 0x7f6b47800000)
+Database Benchmark:
+  pid: 27459
+settings:
+  num-cpus    : 8
+  num-threads : 6
+  shardIndex  : 1
+  paxos_proc_name  : learner
+  nshards     : 2
+  is_micro    : 0
+  is_replicated : 1
+  var-encode  : yes
+  allocator   : jemalloc
+system properties:
+  tuple_prefetch          : no
+  btree_node_prefetch     : yes
+20251114-13:33.11-122172(us) 27459 ! Init            (sync_util.hh:74):  the watermark is exchanging within the cluster: learner
+20251114-13:33.11-188066(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.11-230966(us) 27459 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.11-263389(us) 27459 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:34107 (listening on 0.0.0.0:34107)
+20251114-13:33.11-307532(us) 27459 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:34107
+20251114-13:33.11-378603(us) 27459 * RunEventLoop    (rrr_rpc_backend.cc:518): RrrRpcBackend::RunEventLoop: Starting event loop
+20251114-13:33.11-787976(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.11-964955(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.12-222777(us) 27459 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.12-259844(us) 27459 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:34108 (listening on 0.0.0.0:34108)
+20251114-13:33.12-271330(us) 27459 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:34108
+20251114-13:33.12-386857(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.17-463207(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:1s
+
+20251114-13:33.18-465649(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:2s
+
+20251114-13:33.19-468674(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:3s
+
+20251114-13:33.20-472275(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:4s
+
+20251114-13:33.21-475708(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:5s
+
+20251114-13:33.22-477402(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:6s
+
+20251114-13:33.23-480445(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:7s
+
+20251114-13:33.24-482895(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:8s
+
+20251114-13:33.25-485444(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:9s
+
+20251114-13:33.26-487070(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:10s
+
+20251114-13:33.27-488954(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:11s
+
+20251114-13:33.28-493978(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:12s
+
+20251114-13:33.28-989558(us) 27459 ! operator()      (mako.hh:616):      Receive a control command:0, current ms: 1765719208989
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:810] 2025-12-14 13:33:28.989 | the time for the heartbeat: 1002.217661 ms
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:817] 2025-12-14 13:33:28.989 | trigger an new leader: 1002.217661 ms, 23 sec
+Implement a new fail recovery!
+20251114-13:33.29-1222(us) 27459 ! client_watermark_exchange (sync_util.hh:317): client_watermark_exchange is terminated!
+20251114-13:33.29-94006(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.29-195840(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.29-274191(us) 27459 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.29-326426(us) 27459 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:34109 (listening on 0.0.0.0:34109)
+20251114-13:33.29-373480(us) 27459 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:34109
+20251114-13:33.29-462824(us) 27459 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.29-538876(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:13s
+
+20251114-13:33.29-548087(us) 27459 ! client_control  (sync_util.hh:368): client for the control is starting! control:0, value:1
+20251114-13:33.29-592987(us) 27459 ! get_num_erpc_server (Interface.hh:76):  using default erpc_num, please ensure it is expected
+20251114-13:33.29-623751(us) 27459 ! client_control  (sync_util.hh:374): client for the control is terminated! control:0, value:1
+20251114-13:33.30-107470(us) 27459 ! operator()      (mako.hh:417):      phase-1,par_id:4 DONE
+20251114-13:33.30-125191(us) 27459 ! operator()      (mako.hh:417):      phase-1,par_id:1 DONE
+20251114-13:33.30-138606(us) 27459 ! operator()      (mako.hh:417):      phase-1,par_id:2 DONE
+20251114-13:33.30-147844(us) 27459 ! operator()      (mako.hh:417):      phase-1,par_id:0 DONE
+20251114-13:33.30-169445(us) 27459 ! operator()      (mako.hh:417):      phase-1,par_id:3 DONE
+20251114-13:33.30-216493(us) 27459 ! operator()      (mako.hh:417):      phase-1,par_id:5 DONE
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:29.623 | rrr::Client: connect(127.0.0.1:31011): Connection refused
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:303] 2025-12-14 13:33:29.677 | invoke BroadcastSyncLog to prepare for the failover
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:420] 2025-12-14 13:33:29.921 | Responses size is 2
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:623] 2025-12-14 13:33:29.998 | wait for noops: 0
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:168] 2025-12-14 13:33:30.122 | update the no-ops, par_id:4, slot_id:101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:168] 2025-12-14 13:33:30.147 | update the no-ops, par_id:2, slot_id:101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:168] 2025-12-14 13:33:30.150 | update the no-ops, par_id:1, slot_id:101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:168] 2025-12-14 13:33:30.182 | update the no-ops, par_id:3, slot_id:101
+set fvw, 1, fvw_1:0
+20251114-13:33.30-237078(us) 27459 ! operator()      (mako.hh:616):      Receive a control command:2, current ms: 1765719210237
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:168] 2025-12-14 13:33:30.235 | update the no-ops, par_id:0, slot_id:101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:168] 2025-12-14 13:33:30.235 | update the no-ops, par_id:5, slot_id:101
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:625] 2025-12-14 13:33:30.236 | wait for noops(DONE),par_id: 0
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:623] 2025-12-14 13:33:30.236 | wait for noops: 1
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:625] 2025-12-14 13:33:30.236 | wait for noops(DONE),par_id: 1
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:623] 2025-12-14 13:33:30.236 | wait for noops: 2
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:625] 2025-12-14 13:33:30.236 | wait for noops(DONE),par_id: 2
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:623] 2025-12-14 13:33:30.236 | wait for noops: 3
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:625] 2025-12-14 13:33:30.237 | wait for noops(DONE),par_id: 3
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:623] 2025-12-14 13:33:30.237 | wait for noops: 4
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:625] 2025-12-14 13:33:30.237 | wait for noops(DONE),par_id: 4
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:623] 2025-12-14 13:33:30.237 | wait for noops: 5
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:625] 2025-12-14 13:33:30.237 | wait for noops(DONE),par_id: 5
+get fvw, 1, fvw_0:0
+get fvw, 0, fvw_1:0
+20251114-13:33.30-247367(us) 27459 ! client_control  (sync_util.hh:368): client for the control is starting! control:1, value:1
+20251114-13:33.30-249605(us) 27459 ! get_num_erpc_server (Interface.hh:76):  using default erpc_num, please ensure it is expected
+20251114-13:33.30-266111(us) 27459 ! client_control  (sync_util.hh:374): client for the control is terminated! control:1, value:1
+20251114-13:33.30-312466(us) 27459 ! modeMonitorRun  (common2.h:74):     start for modeMonitorRun, running:0
+20251114-13:33.30-541893(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:14s
+
+20251114-13:33.31-544404(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:15s
+
+20251114-13:33.32-546143(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:16s
+
+20251114-13:33.33-549845(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:17s
+
+20251114-13:33.34-553131(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:18s
+
+20251114-13:33.35-555131(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:19s
+
+20251114-13:33.36-557258(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:20s
+
+20251114-13:33.37-559183(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:21s
+
+20251114-13:33.38-562632(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:22s
+
+20251114-13:33.39-566361(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:23s
+
+20251114-13:33.40-568936(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:24s
+
+20251114-13:33.41-571635(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:25s
+
+20251114-13:33.42-574135(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:26s
+
+20251114-13:33.43-576333(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:27s
+
+20251114-13:33.44-579111(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:28s
+
+20251114-13:33.45-582594(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:29s
+
+20251114-13:33.46-585637(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:30s
+
+20251114-13:33.47-588980(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:31s
+
+20251114-13:33.48-592637(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:32s
+
+20251114-13:33.49-596095(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:33s
+
+20251114-13:33.50-599036(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:34s
+
+20251114-13:33.51-602710(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:35s
+
+20251114-13:33.52-605928(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:36s
+
+20251114-13:33.53-608201(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:37s
+
+20251114-13:33.54-610825(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:38s
+
+20251114-13:33.55-612664(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:39s
+
+20251114-13:33.56-614786(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:40s
+
+20251114-13:33.57-617692(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:41s
+
+20251114-13:33.58-620570(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:42s
+
+20251114-13:33.59-622264(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:43s
+
+20251114-13:34.00-625266(us) 27459 * wait_for_termination (mako.hh:534):      learner is waiting for being ended: 0/6, noops_cnt:6, replay_batch:0, wait_time:44s
+

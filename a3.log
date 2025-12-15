@@ -1,0 +1,156 @@
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:78] 2025-12-14 14:33:57.641 | PWD : /home/eriks972/mako
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:276] 2025-12-14 14:33:57.641 | starting process 2400
+I [/home/eriks972/mako/src/deptran/config.cc:290] 2025-12-14 14:33:57.641 | LoadYML: /home/eriks972/mako/examples/../config/1leader_2followers/paxos3_shardidx0.yml
+I [/home/eriks972/mako/src/deptran/config.cc:290] 2025-12-14 14:33:57.646 | LoadYML: /home/eriks972/mako/examples/../config/occ_paxos.yml
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:285] 2025-12-14 14:33:57.648 | server_infos, number of sites: 3, proc_name: p2
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 14:33:57.826 | parition id of each Paxos group is 2, site-name: s303, site-id: 10
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 14:33:58.009 | parition id of each Paxos group is 1, site-name: s302, site-id: 6
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 14:33:58.186 | parition id of each Paxos group is 0, site-name: s301, site-id: 2
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:297] 2025-12-14 14:33:58.186 | running machine-id: 2
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 14:33:58.188 | launching site: 2, bind address 0.0.0.0:17201
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 14:33:58.188 | launching site: 6, bind address 0.0.0.0:17202
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:106] 2025-12-14 14:33:58.189 | waiting for server setup threads.
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 14:33:58.189 | launching site: a, bind address 0.0.0.0:17203
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 14:33:58.192 | [service]loc_id: 2, name: s301, proc: p2, id: 2
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 14:33:58.193 | [service]loc_id: 2, name: s302, proc: p2, id: 6
+starting server at 0.0.0.0:17201
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 14:33:58.195 | [service]loc_id: 2, name: s303, proc: p2, id: 10
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 14:33:58.195 | Server s301 ready at 0.0.0.0:17201
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 14:33:58.196 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:58.197 | connect to site: 127.0.0.1:17001 (attempt 0)
+starting server at 0.0.0.0:17202
+starting server at 0.0.0.0:17203
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:58.198 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 14:33:58.198 | Server s302 ready at 0.0.0.0:17202
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 14:33:58.198 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:58.198 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 14:33:58.199 | Server s303 ready at 0.0.0.0:17203
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 14:33:58.199 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:58.199 | connect to site: 127.0.0.1:17001 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:58.199 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:58.200 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:59.199 | connect to site: 127.0.0.1:17001 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:59.200 | connect to site: 127.0.0.1:17001 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:59.201 | connect to site: 127.0.0.1:17001 (attempt 1)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:59.202 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:59.202 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:59.203 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:00.203 | connect to site: 127.0.0.1:17001 (attempt 2)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:00.203 | connect to site: 127.0.0.1:17001 (attempt 2)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:00.204 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:00.204 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:00.204 | connect to site: 127.0.0.1:17001 (attempt 2)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:00.205 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:01.206 | connect to site: 127.0.0.1:17001 (attempt 3)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:01.206 | connect to site: 127.0.0.1:17001 (attempt 3)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:01.206 | connect to site: 127.0.0.1:17001 (attempt 3)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:01.207 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:01.207 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:01.207 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:02.208 | connect to site: 127.0.0.1:17001 (attempt 4)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:02.208 | connect to site: 127.0.0.1:17001 (attempt 4)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:02.208 | connect to site: 127.0.0.1:17001 (attempt 4)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:02.209 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:02.209 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:02.209 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:03.210 | connect to site: 127.0.0.1:17001 (attempt 5)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:03.210 | connect to site: 127.0.0.1:17001 (attempt 5)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:03.211 | connect to site: 127.0.0.1:17001 (attempt 5)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:03.212 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:03.212 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:03.212 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:04.213 | connect to site: 127.0.0.1:17001 (attempt 6)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:04.213 | connect to site: 127.0.0.1:17001 (attempt 6)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:04.214 | connect to site: 127.0.0.1:17001 (attempt 6)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:04.216 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:04.216 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:04.216 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:05.217 | connect to site: 127.0.0.1:17001 (attempt 7)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:05.217 | connect to site: 127.0.0.1:17001 (attempt 7)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:05.219 | connect to site: 127.0.0.1:17001 (attempt 7)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:05.221 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:05.221 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:05.222 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:06.222 | connect to site: 127.0.0.1:17001 (attempt 8)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:06.223 | connect to site: 127.0.0.1:17001 (attempt 8)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:06.223 | connect to site: 127.0.0.1:17001 (attempt 8)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:06.224 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:06.224 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:06.224 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:07.224 | connect to site: 127.0.0.1:17001 (attempt 9)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:07.224 | connect to site: 127.0.0.1:17001 (attempt 9)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:07.224 | connect to site: 127.0.0.1:17001 (attempt 9)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:07.225 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:07.225 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:07.225 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:08.226 | connect to site: 127.0.0.1:17001 (attempt 10)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:08.226 | connect to site: 127.0.0.1:17001 (attempt 10)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:08.226 | connect to site: 127.0.0.1:17001 (attempt 10)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:08.227 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:08.228 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:08.228 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.228 | connect to site: 127.0.0.1:17001 (attempt 11)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.229 | connect to site: 127.0.0.1:17001 (attempt 11)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.231 | connect to site: 127.0.0.1:17001 (attempt 11)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.233 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.233 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.234 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.234 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.234 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.236 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.236 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.236 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.237 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.237 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.237 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.238 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.238 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.239 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.239 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.240 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.240 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.240 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.241 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.241 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.241 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.242 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.242 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.242 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.242 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.242 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.245 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.245 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.245 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.245 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.246 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.246 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.246 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 14:34:09.247 | site 2 launched!
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 14:34:09.247 | site 10 launched!
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 14:34:09.247 | site 6 launched!
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:110] 2025-12-14 14:34:09.248 | done waiting for server setup threads.
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 14:34:09.250 | heartbeat setup for s301 on 0.0.0.0:27201
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 14:34:09.252 | heartbeat setup for s302 on 0.0.0.0:27202
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 14:34:09.256 | heartbeat setup for s303 on 0.0.0.0:27203
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:117] 2025-12-14 14:34:09.256 | server workers' communicators setup
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:140] 2025-12-14 14:34:11.140 | Recieved a zero length log
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:140] 2025-12-14 14:34:11.142 | Recieved a zero length log
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:140] 2025-12-14 14:34:11.143 | Recieved a zero length log
+p2, received ending: 3, received msg: 303
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:999] 2025-12-14 14:34:14.259 | shutdown Server Control Service after task finish total submit 0
+I [/home/eriks972/mako/src/deptran/benchmark_control_rpc.cc:43] 2025-12-14 14:34:14.259 | Shutdown Server Control Service
+I [/home/eriks972/mako/src/deptran/benchmark_control_rpc.cc:43] 2025-12-14 14:34:14.259 | Shutdown Server Control Service
+I [/home/eriks972/mako/src/deptran/benchmark_control_rpc.cc:43] 2025-12-14 14:34:14.259 | Shutdown Server Control Service
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:311] 2025-12-14 14:34:14.270 | all server workers have shut down.
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:288] 2025-12-14 14:34:14.371 | site s301 deleting services, num: 1 0 0 0
+I [/home/eriks972/mako/src/deptran/paxos/server.h:47] 2025-12-14 14:34:14.427 | site par 0, loc 2: prepare 0, accept 101, commit 101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:288] 2025-12-14 14:34:14.428 | site s302 deleting services, num: 1 0 0 0
+I [/home/eriks972/mako/src/deptran/paxos/server.h:47] 2025-12-14 14:34:14.485 | site par 1, loc 2: prepare 0, accept 101, commit 101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:288] 2025-12-14 14:34:14.485 | site s303 deleting services, num: 1 0 0 0
+I [/home/eriks972/mako/src/deptran/paxos/server.h:47] 2025-12-14 14:34:14.543 | site par 2, loc 2: prepare 0, accept 101, commit 101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:649] 2025-12-14 14:34:14.594 | Ending worker with n_tot 0 and n_current 0
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:649] 2025-12-14 14:34:14.608 | Ending worker with n_tot 0 and n_current 0
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:649] 2025-12-14 14:34:14.624 | Ending worker with n_tot 0 and n_current 0
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:332] 2025-12-14 14:34:14.638 | exit process.
+[p2 committed]: 303(follower/learner), 0(leader), endReceived: 3, leaderEndReceived:0
+[[32mPASS[0m] committed logs count verify

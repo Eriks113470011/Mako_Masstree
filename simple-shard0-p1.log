@@ -1,0 +1,770 @@
+20251114-13:32.57-863143(us) 27361 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:78] 2025-12-14 13:32:57.890 | PWD : /home/eriks972/mako
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:276] 2025-12-14 13:32:57.890 | starting process 27361
+I [/home/eriks972/mako/src/deptran/config.cc:290] 2025-12-14 13:32:57.890 | LoadYML: /home/eriks972/mako/examples/../config/1leader_2followers/paxos6_shardidx0.yml
+I [/home/eriks972/mako/src/deptran/config.cc:290] 2025-12-14 13:32:57.896 | LoadYML: /home/eriks972/mako/examples/../config/occ_paxos.yml
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:285] 2025-12-14 13:32:57.898 | server_infos, number of sites: 6, proc_name: p1
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:58.196 | parition id of each Paxos group is 5, site-name: s206, site-id: 21
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:58.469 | parition id of each Paxos group is 4, site-name: s205, site-id: 17
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:58.704 | parition id of each Paxos group is 3, site-name: s204, site-id: 13
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:58.891 | parition id of each Paxos group is 2, site-name: s203, site-id: 9
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:59.082 | parition id of each Paxos group is 1, site-name: s202, site-id: 5
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:59.270 | parition id of each Paxos group is 0, site-name: s201, site-id: 1
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:297] 2025-12-14 13:32:59.270 | running machine-id: 1
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:59.273 | launching site: 1, bind address 0.0.0.0:17101
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:59.274 | launching site: 5, bind address 0.0.0.0:17102
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:59.276 | launching site: 9, bind address 0.0.0.0:17103
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:59.279 | launching site: d, bind address 0.0.0.0:17104
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:59.280 | launching site: 11, bind address 0.0.0.0:17105
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:59.281 | [service]loc_id: 1, name: s201, proc: p1, id: 1
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:106] 2025-12-14 13:32:59.282 | waiting for server setup threads.
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:59.282 | launching site: 15, bind address 0.0.0.0:17106
+starting server at 0.0.0.0:17101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:59.285 | [service]loc_id: 1, name: s202, proc: p1, id: 5
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:59.286 | Server s201 ready at 0.0.0.0:17101
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:59.288 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.288 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:59.289 | [service]loc_id: 1, name: s203, proc: p1, id: 9
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.289 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.290 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.290 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.291 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.292 | connect to site: 127.0.0.1:17102 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:32:59.292 | rrr::Client: connect(127.0.0.1:17102): Connection refused
+starting server at 0.0.0.0:17102
+starting server at 0.0.0.0:17103
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:59.295 | Server s202 ready at 0.0.0.0:17102
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:59.295 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:59.295 | Server s203 ready at 0.0.0.0:17103
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.296 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:59.296 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.296 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:59.297 | [service]loc_id: 1, name: s204, proc: p1, id: 13
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.297 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.297 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.297 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.298 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.298 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.298 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:59.298 | [service]loc_id: 1, name: s205, proc: p1, id: 17
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.299 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.299 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.299 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.300 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.300 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.301 | connect to site: 127.0.0.1:17202 (attempt 0)
+starting server at 0.0.0.0:17104
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.301 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.303 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:59.303 | Server s204 ready at 0.0.0.0:17104
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.303 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.304 | connect to site: 127.0.0.1:17003 (attempt 0)
+starting server at 0.0.0.0:17105
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.305 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.306 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.306 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:59.306 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.306 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:59.306 | Server s205 ready at 0.0.0.0:17105
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.306 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:59.307 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.307 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.307 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.308 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.308 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.308 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.309 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.309 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.309 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.310 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.310 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.310 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:59.310 | [service]loc_id: 1, name: s206, proc: p1, id: 21
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.311 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.311 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.311 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.313 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.313 | connect to site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.314 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.314 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.315 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.315 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.315 | connect to site: 127.0.0.1:17002 (attempt 0)
+starting server at 0.0.0.0:17106
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.318 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.317 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:59.318 | Server s206 ready at 0.0.0.0:17106
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.317 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:59.318 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.317 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.319 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.319 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.319 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.320 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.321 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.322 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.322 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.322 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.322 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.323 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.323 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.324 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.324 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.325 | connect to site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.325 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.325 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.326 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.326 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.326 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.327 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.327 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.328 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:32:59.328 | site 9 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.328 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.329 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.330 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.330 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.331 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.331 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.331 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.333 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.333 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.334 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.334 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.334 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.334 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.334 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.336 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.336 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.336 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.336 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.337 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.337 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.337 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.337 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.338 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.338 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.338 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.339 | connect to site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.339 | connect to site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.339 | connect to site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.339 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.340 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.340 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.340 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.340 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.341 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.341 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.341 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:32:59.341 | site 5 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.342 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.342 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.343 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.343 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.343 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.343 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.344 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.344 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.344 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.345 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.345 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.345 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.345 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.345 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:32:59.345 | site 13 launched!
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:32:59.346 | site 21 launched!
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:32:59.346 | site 17 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.294 | connect to site: 127.0.0.1:17102 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.295 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.297 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.298 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.300 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.301 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.302 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.303 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.305 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.306 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.311 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.314 | connect to site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.318 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.320 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.321 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.328 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.331 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.332 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:33:00.336 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:33:00.339 | site 1 launched!
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:110] 2025-12-14 13:33:00.341 | done waiting for server setup threads.
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:00.343 | heartbeat setup for s201 on 0.0.0.0:27101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:00.345 | heartbeat setup for s202 on 0.0.0.0:27102
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:00.356 | heartbeat setup for s203 on 0.0.0.0:27103
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:00.370 | heartbeat setup for s204 on 0.0.0.0:27104
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:00.379 | heartbeat setup for s205 on 0.0.0.0:27105
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:33:00.390 | heartbeat setup for s206 on 0.0.0.0:27106
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:117] 2025-12-14 13:33:00.390 | server workers' communicators setup
+=== Mako Transaction Tests  ===
+allocator::Initialize()
+  hugepgsize: 2097152
+  use MADV_WILLNEED: 1
+  mmap() region [0x7f5e16c00000, 0x7f5e57600000)
+cpu0 owns [0x7f5e16c00000, 0x7f5e21800000)
+cpu1 owns [0x7f5e21800000, 0x7f5e2c400000)
+cpu2 owns [0x7f5e2c400000, 0x7f5e37000000)
+cpu3 owns [0x7f5e37000000, 0x7f5e41c00000)
+cpu4 owns [0x7f5e41c00000, 0x7f5e4c800000)
+cpu5 owns [0x7f5e4c800000, 0x7f5e57400000)
+Database Benchmark:
+  pid: 27361
+settings:
+  num-cpus    : 8
+  num-threads : 6
+  shardIndex  : 0
+  paxos_proc_name  : p1
+  nshards     : 2
+  is_micro    : 0
+  is_replicated : 1
+  var-encode  : yes
+  allocator   : jemalloc
+system properties:
+  tuple_prefetch          : no
+  btree_node_prefetch     : yes
+20251114-13:33.03-494950(us) 27361 ! Init            (sync_util.hh:74):  the watermark is exchanging within the cluster: p1
+20251114-13:33.03-522032(us) 27361 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.03-533167(us) 27361 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.03-535328(us) 27361 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:32007 (listening on 0.0.0.0:32007)
+20251114-13:33.03-537092(us) 27361 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:32007
+20251114-13:33.03-538881(us) 27361 * RunEventLoop    (rrr_rpc_backend.cc:518): RrrRpcBackend::RunEventLoop: Starting event loop
+20251114-13:33.03-901148(us) 27361 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.03-912908(us) 27361 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.03-926756(us) 27361 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.03-952443(us) 27361 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:32008 (listening on 0.0.0.0:32008)
+20251114-13:33.03-971865(us) 27361 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:32008
+20251114-13:33.04-38720(us) 27361 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.057 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.065 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.069 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.076 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.084 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.090 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.102 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.109 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.113 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.117 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.123 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.129 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.136 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.142 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.149 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.152 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.159 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.163 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.166 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.172 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.176 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.181 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.186 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.190 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.192 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.198 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.202 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.207 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.222 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.248 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.260 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.283 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.325 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.336 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.340 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.349 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.353 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.360 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.364 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.369 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.373 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.379 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.385 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.390 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.395 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.401 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.416 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.424 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.430 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.447 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.457 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.465 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.471 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.474 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.488 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.495 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.499 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.521 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.538 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.550 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.558 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.579 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.594 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.605 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.616 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.634 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.640 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.644 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.659 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.665 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.672 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.683 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.692 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.699 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.704 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.712 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.718 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.721 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.727 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.731 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.734 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.738 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.743 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.747 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.758 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.769 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.775 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.778 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.790 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.814 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.819 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.827 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.836 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.844 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.854 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.864 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.876 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.879 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.891 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.898 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.905 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.915 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.924 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.930 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.945 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.954 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.980 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.986 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:04.000 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.007 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.017 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.029 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.044 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.056 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.069 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.078 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.091 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.102 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.111 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.118 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.125 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.133 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.155 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.167 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.175 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.188 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.199 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.212 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.220 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.226 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.233 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.237 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.242 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.245 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.252 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.259 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.269 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.354 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.361 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.364 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.369 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.425 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.451 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.460 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.475 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.489 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.497 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.522 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.533 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.538 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.550 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.563 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.599 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.605 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.613 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.626 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.630 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.636 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.642 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.646 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.652 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.657 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.664 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.673 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.699 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.717 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.723 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.727 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.750 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.770 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.791 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.809 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.823 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.868 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.933 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:05.971 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.019 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.040 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.065 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.091 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.104 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.125 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.161 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.187 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.218 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.239 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.267 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.285 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.296 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.318 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.328 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.344 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.363 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.375 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.407 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.422 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.443 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.468 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.489 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.514 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.544 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.564 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.579 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.589 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.603 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.620 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.645 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.666 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.692 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.708 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.751 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.772 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.788 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.802 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.810 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.827 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.850 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.865 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.878 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.888 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.899 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.913 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.924 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.939 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.954 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.965 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.979 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:06.991 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.002 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.020 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.024 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.047 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.067 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.078 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.094 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.106 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.115 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.126 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.133 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.150 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.162 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.172 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.183 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.200 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.208 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.214 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.224 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.238 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.254 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.272 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.288 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.299 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.332 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.336 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.346 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.365 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.389 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.409 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.417 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.455 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.478 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.493 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.510 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.520 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.533 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.540 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.552 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.572 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.585 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.594 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.599 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.614 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.629 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.638 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.665 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.673 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.682 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.690 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.700 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.708 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.722 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.737 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.752 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.761 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.772 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.799 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.809 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.829 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.847 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.865 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.880 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.894 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.912 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.923 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.943 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.952 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.962 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.969 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.972 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.978 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.991 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:07.998 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.010 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.021 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.033 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.041 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.049 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.054 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.065 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.076 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.091 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.113 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.131 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.149 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.165 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.173 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.184 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.197 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.203 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.209 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.221 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.237 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.265 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.286 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.304 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.321 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.332 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.343 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.356 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.363 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.374 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.385 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.395 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.405 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.419 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.429 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.443 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.455 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.465 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.484 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.497 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.508 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.518 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.521 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.532 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.544 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.553 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.562 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.576 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.585 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.596 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.605 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.615 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.625 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.635 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.640 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.646 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.653 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.662 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.675 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.681 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.691 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.697 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.708 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.716 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.727 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.734 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.740 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.758 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.769 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.775 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.779 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.862 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.892 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.909 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.930 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.946 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.968 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:08.991 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.021 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.042 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.065 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.083 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.103 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.115 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.139 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.159 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.188 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.211 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.229 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.243 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.260 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.279 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.291 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.297 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.327 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.343 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.348 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.358 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.363 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.382 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.397 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.405 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.414 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.433 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.445 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.456 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.461 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.468 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.474 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.482 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.493 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.501 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.509 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.516 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.524 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.533 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.557 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.578 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.592 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.614 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.632 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.650 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.661 | rrr::Client: connect(127.0.0.1:32107): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:09.669 | rrr::Client: connect(127.0.20251114-13:33.09-815349(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:1s
+
+20251114-13:33.10-818203(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:2s
+
+20251114-13:33.11-820453(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:3s
+
+20251114-13:33.12-823543(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:4s
+
+20251114-13:33.13-826844(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:5s
+
+20251114-13:33.14-830268(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:6s
+
+20251114-13:33.15-836360(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:7s
+
+20251114-13:33.16-838196(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:8s
+
+20251114-13:33.17-842962(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:9s
+
+20251114-13:33.18-844970(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:10s
+
+20251114-13:33.19-852653(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:11s
+
+20251114-13:33.20-856286(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:12s
+
+20251114-13:33.21-859700(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:13s
+
+20251114-13:33.22-861744(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:14s
+
+20251114-13:33.23-866605(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:15s
+
+20251114-13:33.24-868851(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:16s
+
+20251114-13:33.25-872545(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:17s
+
+20251114-13:33.26-874808(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:18s
+
+20251114-13:33.27-877115(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:19s
+
+20251114-13:33.28-880266(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:20s
+
+20251114-13:33.29-884252(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:21s
+
+20251114-13:33.30-886423(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:22s
+
+20251114-13:33.31-888965(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:23s
+
+20251114-13:33.32-891849(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:24s
+
+20251114-13:33.33-894623(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:25s
+
+20251114-13:33.34-898174(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:26s
+
+20251114-13:33.35-901721(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:27s
+
+20251114-13:33.36-904740(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:28s
+
+20251114-13:33.37-906454(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:29s
+
+20251114-13:33.38-908404(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:30s
+
+20251114-13:33.39-910949(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:31s
+
+20251114-13:33.40-912810(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:32s
+
+20251114-13:33.41-915895(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:33s
+
+20251114-13:33.42-918120(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:34s
+
+20251114-13:33.43-920009(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:35s
+
+20251114-13:33.44-923237(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:36s
+
+20251114-13:33.45-926012(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:37s
+
+20251114-13:33.46-928792(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:38s
+
+20251114-13:33.47-931210(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:39s
+
+20251114-13:33.48-934076(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:40s
+
+20251114-13:33.49-936440(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:41s
+
+20251114-13:33.50-938476(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:42s
+
+20251114-13:33.51-941082(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:43s
+
+20251114-13:33.52-944916(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:44s
+
+20251114-13:33.53-947103(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:45s
+
+20251114-13:33.54-949843(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:46s
+
+20251114-13:33.55-952767(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:47s
+
+20251114-13:33.56-954970(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:48s
+
+20251114-13:33.57-956873(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:49s
+
+20251114-13:33.58-958566(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:50s
+
+20251114-13:33.59-961669(us) 27361 * wait_for_termination (mako.hh:538):      follower is waiting for being ended: 0/6, noops_cnt:0, replay_batch:0, wait_time:51s
+

@@ -1,0 +1,448 @@
+20251114-13:32.56-738774(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:78] 2025-12-14 13:32:56.752 | PWD : /home/eriks972/mako
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:276] 2025-12-14 13:32:56.752 | starting process 27342
+I [/home/eriks972/mako/src/deptran/config.cc:290] 2025-12-14 13:32:56.753 | LoadYML: /home/eriks972/mako/examples/../config/1leader_2followers/paxos6_shardidx0.yml
+I [/home/eriks972/mako/src/deptran/config.cc:290] 2025-12-14 13:32:56.757 | LoadYML: /home/eriks972/mako/examples/../config/occ_paxos.yml
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:285] 2025-12-14 13:32:56.758 | server_infos, number of sites: 6, proc_name: localhost
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:56.952 | parition id of each Paxos group is 5, site-name: s106, site-id: 20
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:57.231 | parition id of each Paxos group is 4, site-name: s105, site-id: 16
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:57.645 | parition id of each Paxos group is 3, site-name: s104, site-id: 12
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:57.950 | parition id of each Paxos group is 2, site-name: s103, site-id: 8
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:58.254 | parition id of each Paxos group is 1, site-name: s102, site-id: 4
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 13:32:58.529 | parition id of each Paxos group is 0, site-name: s101, site-id: 0
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:297] 2025-12-14 13:32:58.529 | running machine-id: 0
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:58.531 | launching site: 0, bind address 0.0.0.0:17001
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:58.537 | launching site: 8, bind address 0.0.0.0:17003
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:58.538 | launching site: 4, bind address 0.0.0.0:17002
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:58.538 | [service]loc_id: 0, name: s101, proc: localhost, id: 0
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:106] 2025-12-14 13:32:58.545 | waiting for server setup threads.
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:58.545 | launching site: 10, bind address 0.0.0.0:17005
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:58.548 | launching site: c, bind address 0.0.0.0:17004
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 13:32:58.548 | launching site: 14, bind address 0.0.0.0:17006
+starting server at 0.0.0.0:17001
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:58.551 | Server s101 ready at 0.0.0.0:17001
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:58.552 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.553 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.555 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:58.556 | [service]loc_id: 0, name: s102, proc: localhost, id: 4
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:32:58.556 | rrr::Client: connect(127.0.0.1:17101): Connection refused
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:58.559 | [service]loc_id: 0, name: s103, proc: localhost, id: 8
+starting server at 0.0.0.0:17002
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:58.567 | Server s102 ready at 0.0.0.0:17002
+starting server at 0.0.0.0:17003
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:58.570 | Server s103 ready at 0.0.0.0:17003
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:58.570 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:58.576 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.578 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.579 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.580 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.581 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:58.581 | [service]loc_id: 0, name: s105, proc: localhost, id: 16
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:32:58.580 | rrr::Client: connect(127.0.0.1:17101): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:32:58.582 | rrr::Client: connect(127.0.0.1:17101): Connection refused
+starting server at 0.0.0.0:17005
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:58.589 | Server s105 ready at 0.0.0.0:17005
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:58.589 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.590 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:58.591 | [service]loc_id: 0, name: s104, proc: localhost, id: 12
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.592 | connect to site: 127.0.0.1:17101 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:32:58.593 | rrr::Client: connect(127.0.0.1:17101): Connection refused
+starting server at 0.0.0.0:17004
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:58.599 | Server s104 ready at 0.0.0.0:17004
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:58.600 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.602 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 13:32:58.603 | [service]loc_id: 0, name: s106, proc: localhost, id: 20
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.604 | connect to site: 127.0.0.1:17101 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:32:58.606 | rrr::Client: connect(127.0.0.1:17101): Connection refused
+starting server at 0.0.0.0:17006
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 13:32:58.608 | Server s106 ready at 0.0.0.0:17006
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 13:32:58.608 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.608 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:58.609 | connect to site: 127.0.0.1:17101 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:32:58.610 | rrr::Client: connect(127.0.0.1:17101): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.558 | connect to site: 127.0.0.1:17101 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.559 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.560 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.561 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.562 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.562 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.563 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.564 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.565 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.565 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.566 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.566 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.567 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.567 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.568 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.570 | connect to site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.571 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.573 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.574 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.574 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.575 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.577 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.578 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:32:59.579 | site 0 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.583 | connect to site: 127.0.0.1:17101 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.584 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.585 | connect to site: 127.0.0.1:17101 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.587 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.588 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.589 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.589 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.590 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.591 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.591 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.592 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.592 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.594 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.596 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.596 | connect to site: 127.0.0.1:17101 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.597 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.597 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.598 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.598 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.599 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.599 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.600 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.600 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.600 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.600 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.601 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.601 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.601 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.602 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.602 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.602 | connect to site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.602 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.603 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.603 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.604 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.604 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.604 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.605 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.605 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.605 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.605 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.606 | connect to site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.606 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.606 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.606 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.607 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:32:59.607 | site 4 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.608 | connect to site: 127.0.0.1:17101 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.608 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.608 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.608 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.609 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.609 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.609 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.610 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.610 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.610 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:32:59.610 | site 16 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.610 | connect to site: 127.0.0.1:17101 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.611 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.611 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.611 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.612 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.612 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.612 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.612 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.613 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.613 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.613 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.613 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.613 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.614 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.614 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.614 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.614 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.615 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.615 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.615 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.615 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.615 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.615 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.616 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.616 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.616 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.649 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.649 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.649 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.650 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.650 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.650 | connect to site: 127.0.0.1:17004 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.650 | connect to site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.651 | connect to site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.651 | connect to site: 127.0.0.1:17104 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.651 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.651 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.651 | connect to site: 127.0.0.1:17204 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.652 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.652 | connect to site: 127.0.0.1:17304 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.652 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.652 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.653 | connect toLeader initializing RocksDB at path: /tmp/eriks972_mako_rocksdb_shard0_leader_pid27342 with 6 partitions and 6 worker threads
+[RocksDB] Partition 0: opened database at /tmp/eriks972_mako_rocksdb_shard0_leader_pid27342_partition0
+[RocksDB] Partition 1: opened database at /tmp/eriks972_mako_rocksdb_shard0_leader_pid27342_partition1
+[RocksDB] Partition 2: opened database at /tmp/eriks972_mako_rocksdb_shard0_leader_pid27342_partition2
+[RocksDB] Partition 3: opened database at /tmp/eriks972_mako_rocksdb_shard0_leader_pid27342_partition3
+[RocksDB] Partition 4: opened database at /tmp/eriks972_mako_rocksdb_shard0_leader_pid27342_partition4
+[RocksDB] Partition 5: opened database at /tmp/eriks972_mako_rocksdb_shard0_leader_pid27342_partition5
+[RocksDB] Initialized with 6 partitions and 6 worker threads
+[RocksDB] Metadata written: epoch:1,shard_id:0,num_shards:2,num_partitions:6,num_workers:6,timestamp:1765719185
+[RocksDB] Metadata written: epoch:0,shard_id:0,num_shards:2,num_partitions:6,num_workers:6,timestamp:1765719185
+[RocksDB] Epoch changed from 1 to 0, metadata updated
+ site: 127.0.0.1:17005 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.653 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.654 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.654 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.655 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.656 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.656 | connect to site: 127.0.0.1:17105 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.657 | connect to site: 127.0.0.1:17205 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.657 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:32:59.658 | site 8 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.659 | connect to site: 127.0.0.1:17305 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.659 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.660 | connect to site: 127.0.0.1:17006 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.661 | connect to site: 127.0.0.1:17106 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.661 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.661 | connect to site: 127.0.0.1:17206 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.662 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 13:32:59.662 | connect to site: 127.0.0.1:17306 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:32:59.663 | site 20 launched!
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 13:32:59.663 | site 12 launched!
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:110] 2025-12-14 13:32:59.671 | done waiting for server setup threads.
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:32:59.672 | heartbeat setup for s101 on 0.0.0.0:27001
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:32:59.673 | heartbeat setup for s102 on 0.0.0.0:27002
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:32:59.681 | heartbeat setup for s103 on 0.0.0.0:27003
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:32:59.685 | heartbeat setup for s104 on 0.0.0.0:27004
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:32:59.692 | heartbeat setup for s105 on 0.0.0.0:27005
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 13:32:59.710 | heartbeat setup for s106 on 0.0.0.0:27006
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:117] 2025-12-14 13:32:59.711 | server workers' communicators setup
+=== Mako Transaction Tests  ===
+allocator::Initialize()
+  hugepgsize: 2097152
+  use MADV_WILLNEED: 1
+  mmap() region [0x7fb0a19e6000, 0x7fb0e23e6000)
+cpu0 owns [0x7fb0a1a00000, 0x7fb0ac600000)
+cpu1 owns [0x7fb0ac600000, 0x7fb0b7200000)
+cpu2 owns [0x7fb0b7200000, 0x7fb0c1e00000)
+cpu3 owns [0x7fb0c1e00000, 0x7fb0cca00000)
+cpu4 owns [0x7fb0cca00000, 0x7fb0d7600000)
+cpu5 owns [0x7fb0d7600000, 0x7fb0e2200000)
+Database Benchmark:
+  pid: 27342
+settings:
+  num-cpus    : 8
+  num-threads : 6
+  shardIndex  : 0
+  paxos_proc_name  : localhost
+  nshards     : 2
+  is_micro    : 0
+  is_replicated : 1
+  var-encode  : yes
+  allocator   : jemalloc
+system properties:
+  tuple_prefetch          : no
+  btree_node_prefetch     : yes
+20251114-13:33.05-299919(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.05-334929(us) 27342 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.05-351383(us) 27342 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:31011 (listening on 0.0.0.0:31011)
+20251114-13:33.05-364386(us) 27342 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:31011
+20251114-13:33.05-369096(us) 27342 * RunEventLoop    (rrr_rpc_backend.cc:518): RrrRpcBackend::RunEventLoop: Starting event loop
+20251114-13:33.05-474025(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.05-603284(us) 27342 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.05-607372(us) 27342 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:31012 (listening on 0.0.0.0:31012)
+20251114-13:33.05-615986(us) 27342 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:31012
+20251114-13:33.05-617572(us) 27342 * RunEventLoop    (rrr_rpc_backend.cc:518): RrrRpcBackend::RunEventLoop: Starting event loop
+new table is createded with name: customer_0, table-id: 1, on shard-server id:0
+new table is createded with name: customer_0, table-id: 201, on shard-server id:1
+20251114-13:33.05-688357(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.05-741224(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.05-784508(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.05-804079(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.05-857708(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.05-871659(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.05-886259(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.05-907116(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.05-950709(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.05-990298(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.06-72338(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.06-230520(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.11-651010(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.11-680477(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[Worker 1] Starting on thread 140396560516672
+[Worker 0] Starting on thread 140396568909376
+[Worker 4] Starting on thread 140396535338560
+[Worker 5] Starting on thread 140396526945856
+[Worker 3] Starting on thread 140396543731264
+[Worker 2] Starting on thread 140396552123968
+[TRANSPORT] Using default: rrr
+20251114-13:33.11-726745(us) 27342 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.11-739449(us) 27342 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:31000 (listening on 0.0.0.0:31000)
+20251114-13:33.11-740536(us) 27342 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:31000
+20251114-13:33.11-949530(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.12-85283(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.12-87782(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.12-110345(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.12-162066(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.12-228988(us) 27342 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.12-238658(us) 27342 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:31001 (listening on 0.0.0.0:31001)
+20251114-13:33.12-244143(us) 27342 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:31001
+20251114-13:33.12-340077(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.12-374793(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.12-378251(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.12-430506(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+[TRANSPORT] Using default: rrr
+20251114-13:33.12-519863(us) 27342 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.12-539121(us) 27342 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.12-548830(us) 27342 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:31003 (listening on 0.0.0.0:31003)
+20251114-13:33.12-603625(us) 27342 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:31003
+20251114-13:33.12-681926(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.12-696803(us) 27342 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:31002 (listening on 0.0.0.0:31002)
+20251114-13:33.12-698126(us) 27342 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:31002
+20251114-13:33.12-727126(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.12-873666(us) 27342 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.13-42012(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.13-180896(us) 27342 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:31004 (listening on 0.0.0.0:31004)
+20251114-13:33.13-183457(us) 27342 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:31004
+20251114-13:33.13-191074(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.13-205283(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+[TRANSPORT] Using default: rrr
+20251114-13:33.13-390510(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+20251114-13:33.13-524379(us) 27342 * Initialize      (rrr_rpc_backend.cc:58): RrrRpcBackend::Initialize: poll_thread_worker_ created, is_some=1
+20251114-13:33.13-632112(us) 27342 * Initialize      (rrr_rpc_backend.cc:88): RrrRpcBackend initialized on 127.0.0.1:31005 (listening on 0.0.0.0:31005)
+20251114-13:33.13-727750(us) 27342 * FastTransport   (fasttransport.cc:116): FastTransport initialized with rrr/rpc backend on 127.0.0.1:31005
+20251114-13:33.14-12707(us) 27342 * ParseOldFormat  (configuration.cc:66): Using old configuration format
+
+--- Testing Basic Transactions Thread:140396543731264 ---
+existing table is createded with name: customer_0, table-id: 1, on shard-server id:0
+
+--- Testing Basic Transactions Thread:140396568909376 ---
+existing table is createded with name: customer_0, table-id: 1, on shard-server id:0
+existing table is createded with name: customer_0, table-id: 201, on shard-server id:1
+
+--- Testing Basic Transactions Thread:140396535338560 ---
+existing table is createded with name: customer_0, table-id: 1, on shard-server id:0
+existing table is createded with name: customer_0, table-id: 201, on shard-server id:1
+
+--- Testing Basic Transactions Thread:140396552123968 ---
+existing table is createded with name: customer_0, table-id: 1, on shard-server id:0
+existing table is createded with name: customer_0, table-id: 201, on shard-server id:1
+
+--- Testing Basic Transactions Thread:140396560516672 ---
+
+--- Testing Basic Transactions Thread:140396526945856 ---
+existing table is createded with name: customer_0, table-id: 1, on shard-server id:0
+existing table is createded with name: customer_0, table-id: 1, on shard-server id:0
+existing table is createded with name: customer_0, table-id: 201, on shard-server id:1
+existing table is createded with name: customer_0, table-id: 201, on shard-server id:1
+existing table is createded with name: customer_0, table-id: 201, on shard-server id:1
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.597 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.606 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.614 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.625 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.629 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.633 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.637 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.639 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.653 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.655 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.665 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.668 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.668 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.670 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.671 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.673 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.680 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.683 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.704 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.708 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.710 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.711 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.733 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.738 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.740 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.741 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.763 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.766 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.773 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.774 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.807 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.808 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.855 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.825 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.860 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.825 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.862 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.865 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.866 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.848 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.869 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.870 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.909 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.925 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:14.955 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.271 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.278 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.279 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.279 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.280 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.286 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.289 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.292 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.293 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.298 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.304 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.280 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.321 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.324 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.325 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.337 | rrr::Client: co20251114-13:33.15-450390(us) 27342 ! SendToShard     (rrr_rpc_backend.cc:260): Failed to get client for shard 1, server 12nnect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.300 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.350 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.351 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.354 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.384 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.399 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.406 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.432 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.436 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.437 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.437 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.439 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.439 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.440 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+[[32mPASS[0m] Write 5 records
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.445 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.445 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.446 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.447 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.447 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+[[32mPASS[0m] Write 5 records
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.448 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+[[32mPASS[0m] Write 5 records
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.449 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+[[32mPASS[0m] Write 5 records
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.449 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.450 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.450 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.451 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.456 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.456 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.457 | rrr::Client: connect(127.0.0.1:31112): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 13:33:15.466 | rrr::Client: connect(127.0.0.1:31111): Connection refused
+E [/home/e
+20251114-13:33.15-530343(us) 27342 ! SendToShard     (rrr_rpc_backend.cc:260): Failed to get client for shard 1, server 11
+20251114-13:33.15-531795(us) 27342 ! SendToShard     (rrr_rpc_backend.cc:260): Failed to get client for shard 1, server 12
+20251114-13:33.15-537486(us) 27342 ! SendToShard     (rrr_rpc_backend.cc:260): Failed to get client for shard 1, server 11
+20251114-13:33.15-544245(us) 27342 ! SendToShard     (rrr_rpc_backend.cc:260): 

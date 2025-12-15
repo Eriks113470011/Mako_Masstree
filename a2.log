@@ -1,0 +1,792 @@
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:78] 2025-12-14 14:33:52.645 | PWD : /home/eriks972/mako
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:276] 2025-12-14 14:33:52.645 | starting process 2347
+I [/home/eriks972/mako/src/deptran/config.cc:290] 2025-12-14 14:33:52.646 | LoadYML: /home/eriks972/mako/examples/../config/1leader_2followers/paxos3_shardidx0.yml
+I [/home/eriks972/mako/src/deptran/config.cc:290] 2025-12-14 14:33:52.655 | LoadYML: /home/eriks972/mako/examples/../config/occ_paxos.yml
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:285] 2025-12-14 14:33:52.659 | server_infos, number of sites: 3, proc_name: p1
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 14:33:52.859 | parition id of each Paxos group is 2, site-name: s203, site-id: 9
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 14:33:53.035 | parition id of each Paxos group is 1, site-name: s202, site-id: 5
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:291] 2025-12-14 14:33:53.213 | parition id of each Paxos group is 0, site-name: s201, site-id: 1
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:297] 2025-12-14 14:33:53.213 | running machine-id: 1
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 14:33:53.215 | launching site: 1, bind address 0.0.0.0:17101
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 14:33:53.216 | launching site: 5, bind address 0.0.0.0:17102
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:106] 2025-12-14 14:33:53.217 | waiting for server setup threads.
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:92] 2025-12-14 14:33:53.217 | launching site: 9, bind address 0.0.0.0:17103
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 14:33:53.220 | [service]loc_id: 1, name: s201, proc: p1, id: 1
+starting server at 0.0.0.0:17101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 14:33:53.223 | [service]loc_id: 1, name: s203, proc: p1, id: 9
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:198] 2025-12-14 14:33:53.223 | [service]loc_id: 1, name: s202, proc: p1, id: 5
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 14:33:53.225 | Server s201 ready at 0.0.0.0:17101
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 14:33:53.225 | setup paxos communicator
+starting server at 0.0.0.0:17102
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:53.225 | connect to site: 127.0.0.1:17001 (attempt 0)
+starting server at 0.0.0.0:17103
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 14:33:53.226 | Server s202 ready at 0.0.0.0:17102
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:53.227 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 14:33:53.227 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:221] 2025-12-14 14:33:53.227 | Server s203 ready at 0.0.0.0:17103
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:53.227 | connect to site: 127.0.0.1:17001 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:14] 2025-12-14 14:33:53.228 | setup paxos communicator
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:53.228 | connect to site: 127.0.0.1:17001 (attempt 0)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:53.228 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:53.228 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:54.228 | connect to site: 127.0.0.1:17001 (attempt 1)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:54.229 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:54.229 | connect to site: 127.0.0.1:17001 (attempt 1)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:54.229 | connect to site: 127.0.0.1:17001 (attempt 1)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:54.230 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:54.230 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:55.231 | connect to site: 127.0.0.1:17001 (attempt 2)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:55.231 | connect to site: 127.0.0.1:17001 (attempt 2)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:55.231 | connect to site: 127.0.0.1:17001 (attempt 2)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:55.235 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:55.235 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:55.235 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:56.237 | connect to site: 127.0.0.1:17001 (attempt 3)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:56.237 | connect to site: 127.0.0.1:17001 (attempt 3)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:56.237 | connect to site: 127.0.0.1:17001 (attempt 3)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:56.241 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:56.241 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:56.241 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:57.242 | connect to site: 127.0.0.1:17001 (attempt 4)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:57.242 | connect to site: 127.0.0.1:17001 (attempt 4)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:57.242 | connect to site: 127.0.0.1:17001 (attempt 4)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:57.243 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:57.243 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:57.244 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:58.245 | connect to site: 127.0.0.1:17001 (attempt 5)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:58.245 | connect to site: 127.0.0.1:17001 (attempt 5)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:58.245 | connect to site: 127.0.0.1:17001 (attempt 5)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:58.245 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:58.246 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:58.246 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:59.247 | connect to site: 127.0.0.1:17001 (attempt 6)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:59.247 | connect to site: 127.0.0.1:17001 (attempt 6)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:33:59.249 | connect to site: 127.0.0.1:17001 (attempt 6)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:59.250 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:59.250 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:33:59.250 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:00.251 | connect to site: 127.0.0.1:17001 (attempt 7)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:00.251 | connect to site: 127.0.0.1:17001 (attempt 7)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:00.251 | connect to site: 127.0.0.1:17001 (attempt 7)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:00.251 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:00.251 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:00.251 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:01.252 | connect to site: 127.0.0.1:17001 (attempt 8)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:01.252 | connect to site: 127.0.0.1:17001 (attempt 8)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:01.252 | connect to site: 127.0.0.1:17001 (attempt 8)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:01.253 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:01.253 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:01.253 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:02.254 | connect to site: 127.0.0.1:17001 (attempt 9)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:02.254 | connect to site: 127.0.0.1:17001 (attempt 9)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:02.254 | connect to site: 127.0.0.1:17001 (attempt 9)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:02.255 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:02.255 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:02.255 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:03.256 | connect to site: 127.0.0.1:17001 (attempt 10)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:03.257 | connect to site: 127.0.0.1:17001 (attempt 10)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:03.257 | connect to site: 127.0.0.1:17001 (attempt 10)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:03.258 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:03.258 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:03.258 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:04.258 | connect to site: 127.0.0.1:17001 (attempt 11)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:04.258 | connect to site: 127.0.0.1:17001 (attempt 11)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:04.260 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:04.261 | connect to site: 127.0.0.1:17001 (attempt 11)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:04.264 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:04.264 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:05.261 | connect to site: 127.0.0.1:17001 (attempt 12)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:05.264 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:05.265 | connect to site: 127.0.0.1:17001 (attempt 12)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:05.266 | connect to site: 127.0.0.1:17001 (attempt 12)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:05.268 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:05.268 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:06.264 | connect to site: 127.0.0.1:17001 (attempt 13)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:06.265 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:06.269 | connect to site: 127.0.0.1:17001 (attempt 13)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:06.269 | connect to site: 127.0.0.1:17001 (attempt 13)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:06.269 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:06.269 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:07.266 | connect to site: 127.0.0.1:17001 (attempt 14)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:07.267 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:07.270 | connect to site: 127.0.0.1:17001 (attempt 14)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:07.270 | connect to site: 127.0.0.1:17001 (attempt 14)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:07.271 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:07.271 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:08.268 | connect to site: 127.0.0.1:17001 (attempt 15)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:08.268 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:08.272 | connect to site: 127.0.0.1:17001 (attempt 15)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:08.272 | connect to site: 127.0.0.1:17001 (attempt 15)
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:08.272 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+E [/home/eriks972/mako/src/rrr/rpc/client.cpp:194] 2025-12-14 14:34:08.272 | rrr::Client: connect(127.0.0.1:17001): Connection refused
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.269 | connect to site: 127.0.0.1:17001 (attempt 16)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.270 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.271 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.271 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.272 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.272 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.273 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.273 | connect to site: 127.0.0.1:17001 (attempt 16)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.273 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.273 | connect to site: 127.0.0.1:17001 (attempt 16)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.274 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.274 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.275 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.275 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.275 | connect to site: 127.0.0.1:17101 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.276 | connect to site: 127.0.0.1:17201 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.276 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.276 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.276 | connect to site: 127.0.0.1:17301 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.276 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.277 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.277 | connect to site: 127.0.0.1:17002 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.277 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.277 | connect to site: 127.0.0.1:17102 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.278 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.278 | connect to site: 127.0.0.1:17202 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.278 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.278 | connect to site: 127.0.0.1:17302 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.279 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 14:34:09.279 | site 5 launched!
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.280 | connect to site: 127.0.0.1:17003 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.280 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.281 | connect to site: 127.0.0.1:17103 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.281 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.281 | connect to site: 127.0.0.1:17203 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.282 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/communicator.cc:175] 2025-12-14 14:34:09.282 | connect to site: 127.0.0.1:17303 (attempt 0)
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 14:34:09.282 | site 9 launched!
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:103] 2025-12-14 14:34:09.283 | site 1 launched!
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:110] 2025-12-14 14:34:09.284 | done waiting for server setup threads.
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 14:34:09.286 | heartbeat setup for s201 on 0.0.0.0:27101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 14:34:09.288 | heartbeat setup for s202 on 0.0.0.0:27102
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:255] 2025-12-14 14:34:09.291 | heartbeat setup for s203 on 0.0.0.0:27103
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:117] 2025-12-14 14:34:09.291 | server workers' communicators setup
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.379 | ForwardToLearner: par_id=0, slot=1, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.379 | ForwardToLearner: SENDING to learner site_id=3, slot=1
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.382 | ForwardToLearner: par_id=2, slot=1, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.382 | ForwardToLearner: SENDING to learner site_id=11, slot=1
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.384 | ForwardToLearner: par_id=1, slot=1, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.384 | ForwardToLearner: SENDING to learner site_id=7, slot=1
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.386 | ForwardToLearner: par_id=0, slot=2, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.386 | ForwardToLearner: SENDING to learner site_id=3, slot=2
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.388 | ForwardToLearner: par_id=1, slot=2, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.388 | ForwardToLearner: SENDING to learner site_id=7, slot=2
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.392 | ForwardToLearner: par_id=1, slot=3, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.392 | ForwardToLearner: SENDING to learner site_id=7, slot=3
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.394 | ForwardToLearner: par_id=0, slot=3, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.394 | ForwardToLearner: SENDING to learner site_id=3, slot=3
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.396 | ForwardToLearner: par_id=2, slot=2, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.398 | ForwardToLearner: SENDING to learner site_id=11, slot=2
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.403 | ForwardToLearner: par_id=0, slot=4, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.403 | ForwardToLearner: SENDING to learner site_id=3, slot=4
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.403 | ForwardToLearner: par_id=1, slot=4, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.403 | ForwardToLearner: SENDING to learner site_id=7, slot=4
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.404 | ForwardToLearner: par_id=2, slot=3, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.404 | ForwardToLearner: SENDING to learner site_id=11, slot=3
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.407 | ForwardToLearner: par_id=0, slot=5, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.407 | ForwardToLearner: SENDING to learner site_id=3, slot=5
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.410 | ForwardToLearner: par_id=2, slot=4, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.410 | ForwardToLearner: SENDING to learner site_id=11, slot=4
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.414 | ForwardToLearner: par_id=1, slot=5, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.414 | ForwardToLearner: SENDING to learner site_id=7, slot=5
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.417 | ForwardToLearner: par_id=1, slot=6, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.417 | ForwardToLearner: SENDING to learner site_id=7, slot=6
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.417 | ForwardToLearner: par_id=2, slot=5, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.417 | ForwardToLearner: par_id=0, slot=6, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.417 | ForwardToLearner: SENDING to learner site_id=3, slot=6
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.417 | ForwardToLearner: SENDING to learner site_id=11, slot=5
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.423 | ForwardToLearner: par_id=2, slot=6, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.423 | ForwardToLearner: SENDING to learner site_id=11, slot=6
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.425 | ForwardToLearner: par_id=0, slot=7, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.425 | ForwardToLearner: SENDING to learner site_id=3, slot=7
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.427 | ForwardToLearner: par_id=1, slot=7, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.428 | ForwardToLearner: SENDING to learner site_id=7, slot=7
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.428 | ForwardToLearner: par_id=2, slot=7, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.428 | ForwardToLearner: SENDING to learner site_id=11, slot=7
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.429 | ForwardToLearner: par_id=0, slot=8, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.429 | ForwardToLearner: SENDING to learner site_id=3, slot=8
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.433 | ForwardToLearner: par_id=1, slot=8, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.433 | ForwardToLearner: SENDING to learner site_id=7, slot=8
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.437 | ForwardToLearner: par_id=0, slot=9, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.437 | ForwardToLearner: SENDING to learner site_id=3, slot=9
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.440 | ForwardToLearner: par_id=1, slot=9, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.440 | ForwardToLearner: SENDING to learner site_id=7, slot=9
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.444 | ForwardToLearner: par_id=0, slot=10, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.444 | ForwardToLearner: par_id=1, slot=10, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.444 | ForwardToLearner: SENDING to learner site_id=3, slot=10
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.444 | ForwardToLearner: SENDING to learner site_id=7, slot=10
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.448 | ForwardToLearner: par_id=2, slot=8, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.448 | ForwardToLearner: SENDING to learner site_id=11, slot=8
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.449 | ForwardToLearner: par_id=2, slot=9, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.449 | ForwardToLearner: SENDING to learner site_id=11, slot=9
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.450 | ForwardToLearner: par_id=0, slot=11, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.450 | ForwardToLearner: SENDING to learner site_id=3, slot=11
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.453 | ForwardToLearner: par_id=1, slot=11, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.453 | ForwardToLearner: SENDING to learner site_id=7, slot=11
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.458 | ForwardToLearner: par_id=0, slot=12, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.458 | ForwardToLearner: SENDING to learner site_id=3, slot=12
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.462 | ForwardToLearner: par_id=2, slot=10, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.462 | ForwardToLearner: SENDING to learner site_id=11, slot=10
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.464 | ForwardToLearner: par_id=1, slot=12, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.464 | ForwardToLearner: SENDING to learner site_id=7, slot=12
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.466 | ForwardToLearner: par_id=0, slot=13, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.466 | ForwardToLearner: SENDING to learner site_id=3, slot=13
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.471 | ForwardToLearner: par_id=1, slot=13, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.471 | ForwardToLearner: SENDING to learner site_id=7, slot=13
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.473 | ForwardToLearner: par_id=2, slot=11, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.473 | ForwardToLearner: SENDING to learner site_id=11, slot=11
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.476 | ForwardToLearner: par_id=1, slot=14, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.476 | ForwardToLearner: SENDING to learner site_id=7, slot=14
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.481 | ForwardToLearner: par_id=2, slot=12, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.481 | ForwardToLearner: SENDING to learner site_id=11, slot=12
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.481 | ForwardToLearner: par_id=2, slot=13, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.481 | ForwardToLearner: SENDING to learner site_id=11, slot=13
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.481 | ForwardToLearner: par_id=0, slot=14, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.482 | ForwardToLearner: SENDING to learner site_id=3, slot=14
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.483 | ForwardToLearner: par_id=1, slot=15, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.483 | ForwardToLearner: SENDING to learner site_id=7, slot=15
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.484 | ForwardToLearner: par_id=0, slot=15, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.484 | ForwardToLearner: SENDING to learner site_id=3, slot=15
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.490 | ForwardToLearner: par_id=2, slot=14, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.491 | ForwardToLearner: SENDING to learner site_id=11, slot=14
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.492 | ForwardToLearner: par_id=2, slot=15, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.492 | ForwardToLearner: SENDING to learner site_id=11, slot=15
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.493 | ForwardToLearner: par_id=0, slot=16, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.493 | ForwardToLearner: SENDING to learner site_id=3, slot=16
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.495 | ForwardToLearner: par_id=1, slot=16, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.495 | ForwardToLearner: SENDING to learner site_id=7, slot=16
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.499 | ForwardToLearner: par_id=0, slot=17, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.499 | ForwardToLearner: SENDING to learner site_id=3, slot=17
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.500 | ForwardToLearner: par_id=2, slot=16, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.500 | ForwardToLearner: SENDING to learner site_id=11, slot=16
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.503 | ForwardToLearner: par_id=1, slot=17, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.503 | ForwardToLearner: SENDING to learner site_id=7, slot=17
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.507 | ForwardToLearner: par_id=0, slot=18, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.507 | ForwardToLearner: SENDING to learner site_id=3, slot=18
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.512 | ForwardToLearner: par_id=1, slot=18, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.512 | ForwardToLearner: SENDING to learner site_id=7, slot=18
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.512 | ForwardToLearner: par_id=2, slot=17, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.512 | ForwardToLearner: SENDING to learner site_id=11, slot=17
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.513 | ForwardToLearner: par_id=0, slot=19, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.513 | ForwardToLearner: SENDING to learner site_id=3, slot=19
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.516 | ForwardToLearner: par_id=2, slot=18, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.516 | ForwardToLearner: SENDING to learner site_id=11, slot=18
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.518 | ForwardToLearner: par_id=0, slot=20, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.518 | ForwardToLearner: SENDING to learner site_id=3, slot=20
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.521 | ForwardToLearner: par_id=1, slot=19, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.521 | ForwardToLearner: SENDING to learner site_id=7, slot=19
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.521 | ForwardToLearner: par_id=1, slot=20, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.521 | ForwardToLearner: SENDING to learner site_id=7, slot=20
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.527 | ForwardToLearner: par_id=2, slot=19, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.527 | ForwardToLearner: SENDING to learner site_id=11, slot=19
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.527 | ForwardToLearner: par_id=0, slot=21, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.528 | ForwardToLearner: SENDING to learner site_id=3, slot=21
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.529 | ForwardToLearner: par_id=2, slot=20, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.529 | ForwardToLearner: SENDING to learner site_id=11, slot=20
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.532 | ForwardToLearner: par_id=1, slot=21, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.532 | ForwardToLearner: SENDING to learner site_id=7, slot=21
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.534 | ForwardToLearner: par_id=1, slot=22, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.534 | ForwardToLearner: SENDING to learner site_id=7, slot=22
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.535 | ForwardToLearner: par_id=0, slot=22, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.535 | ForwardToLearner: SENDING to learner site_id=3, slot=22
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.540 | ForwardToLearner: par_id=2, slot=21, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.541 | ForwardToLearner: SENDING to learner site_id=11, slot=21
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.543 | ForwardToLearner: par_id=0, slot=23, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.543 | ForwardToLearner: SENDING to learner site_id=3, slot=23
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.547 | ForwardToLearner: par_id=1, slot=23, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.548 | ForwardToLearner: SENDING to learner site_id=7, slot=23
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.549 | ForwardToLearner: par_id=2, slot=22, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.549 | ForwardToLearner: SENDING to learner site_id=11, slot=22
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.550 | ForwardToLearner: par_id=0, slot=24, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.550 | ForwardToLearner: SENDING to learner site_id=3, slot=24
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.553 | ForwardToLearner: par_id=2, slot=23, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.553 | ForwardToLearner: SENDING to learner site_id=11, slot=23
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.558 | ForwardToLearner: par_id=0, slot=25, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.558 | ForwardToLearner: SENDING to learner site_id=3, slot=25
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.560 | ForwardToLearner: par_id=2, slot=24, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.560 | ForwardToLearner: SENDING to learner site_id=11, slot=24
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.561 | ForwardToLearner: par_id=1, slot=24, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.561 | ForwardToLearner: SENDING to learner site_id=7, slot=24
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.562 | ForwardToLearner: par_id=1, slot=25, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.562 | ForwardToLearner: SENDING to learner site_id=7, slot=25
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.568 | ForwardToLearner: par_id=1, slot=26, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.568 | ForwardToLearner: par_id=0, slot=26, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.568 | ForwardToLearner: SENDING to learner site_id=7, slot=26
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.568 | ForwardToLearner: SENDING to learner site_id=3, slot=26
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.573 | ForwardToLearner: par_id=0, slot=27, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.573 | ForwardToLearner: SENDING to learner site_id=3, slot=27
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.574 | ForwardToLearner: par_id=2, slot=25, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.574 | ForwardToLearner: SENDING to learner site_id=11, slot=25
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.576 | ForwardToLearner: par_id=1, slot=27, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.579 | ForwardToLearner: SENDING to learner site_id=7, slot=27
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.580 | ForwardToLearner: par_id=2, slot=26, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.580 | ForwardToLearner: SENDING to learner site_id=11, slot=26
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.583 | ForwardToLearner: par_id=2, slot=27, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.583 | ForwardToLearner: SENDING to learner site_id=11, slot=27
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.584 | ForwardToLearner: par_id=1, slot=28, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.584 | ForwardToLearner: SENDING to learner site_id=7, slot=28
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.585 | ForwardToLearner: par_id=0, slot=28, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.585 | ForwardToLearner: SENDING to learner site_id=3, slot=28
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.591 | ForwardToLearner: par_id=0, slot=29, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.591 | ForwardToLearner: SENDING to learner site_id=3, slot=29
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.592 | ForwardToLearner: par_id=1, slot=29, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.592 | ForwardToLearner: SENDING to learner site_id=7, slot=29
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.596 | ForwardToLearner: par_id=2, slot=28, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.596 | ForwardToLearner: SENDING to learner site_id=11, slot=28
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.598 | ForwardToLearner: par_id=2, slot=29, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.598 | ForwardToLearner: SENDING to learner site_id=11, slot=29
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.601 | ForwardToLearner: par_id=1, slot=30, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.601 | ForwardToLearner: SENDING to learner site_id=7, slot=30
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.605 | ForwardToLearner: par_id=0, slot=30, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.605 | ForwardToLearner: SENDING to learner site_id=3, slot=30
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.606 | ForwardToLearner: par_id=0, slot=31, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.606 | ForwardToLearner: SENDING to learner site_id=3, slot=31
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.607 | ForwardToLearner: par_id=2, slot=30, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.607 | ForwardToLearner: SENDING to learner site_id=11, slot=30
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.612 | ForwardToLearner: par_id=2, slot=31, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.612 | ForwardToLearner: SENDING to learner site_id=11, slot=31
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.613 | ForwardToLearner: par_id=1, slot=31, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.613 | ForwardToLearner: SENDING to learner site_id=7, slot=31
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.616 | ForwardToLearner: par_id=1, slot=32, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.616 | ForwardToLearner: SENDING to learner site_id=7, slot=32
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.614 | ForwardToLearner: par_id=0, slot=32, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.617 | ForwardToLearner: SENDING to learner site_id=3, slot=32
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.619 | ForwardToLearner: par_id=1, slot=33, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.619 | ForwardToLearner: SENDING to learner site_id=7, slot=33
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.620 | ForwardToLearner: par_id=2, slot=32, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.620 | ForwardToLearner: SENDING to learner site_id=11, slot=32
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.623 | ForwardToLearner: par_id=0, slot=33, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.623 | ForwardToLearner: SENDING to learner site_id=3, slot=33
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.625 | ForwardToLearner: par_id=1, slot=34, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.625 | ForwardToLearner: SENDING to learner site_id=7, slot=34
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.631 | ForwardToLearner: par_id=1, slot=35, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.631 | ForwardToLearner: SENDING to learner site_id=7, slot=35
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.631 | ForwardToLearner: par_id=0, slot=34, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.631 | ForwardToLearner: SENDING to learner site_id=3, slot=34
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.631 | ForwardToLearner: par_id=2, slot=33, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.631 | ForwardToLearner: SENDING to learner site_id=11, slot=33
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.636 | ForwardToLearner: par_id=1, slot=36, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.636 | ForwardToLearner: SENDING to learner site_id=7, slot=36
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.636 | ForwardToLearner: par_id=2, slot=34, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.636 | ForwardToLearner: SENDING to learner site_id=11, slot=34
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.640 | ForwardToLearner: par_id=0, slot=35, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.640 | ForwardToLearner: SENDING to learner site_id=3, slot=35
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.642 | ForwardToLearner: par_id=0, slot=36, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.642 | ForwardToLearner: SENDING to learner site_id=3, slot=36
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.642 | ForwardToLearner: par_id=2, slot=35, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.642 | ForwardToLearner: SENDING to learner site_id=11, slot=35
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.643 | ForwardToLearner: par_id=1, slot=37, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.643 | ForwardToLearner: SENDING to learner site_id=7, slot=37
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.650 | ForwardToLearner: par_id=2, slot=36, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.650 | ForwardToLearner: SENDING to learner site_id=11, slot=36
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.652 | ForwardToLearner: par_id=0, slot=37, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.652 | ForwardToLearner: SENDING to learner site_id=3, slot=37
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.653 | ForwardToLearner: par_id=0, slot=38, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.653 | ForwardToLearner: SENDING to learner site_id=3, slot=38
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.654 | ForwardToLearner: par_id=1, slot=38, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.654 | ForwardToLearner: SENDING to learner site_id=7, slot=38
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.659 | ForwardToLearner: par_id=0, slot=39, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.659 | ForwardToLearner: SENDING to learner site_id=3, slot=39
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.661 | ForwardToLearner: par_id=1, slot=39, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.661 | ForwardToLearner: SENDING to learner site_id=7, slot=39
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.662 | ForwardToLearner: par_id=2, slot=37, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.662 | ForwardToLearner: SENDING to learner site_id=11, slot=37
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.664 | ForwardToLearner: par_id=1, slot=40, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.664 | ForwardToLearner: SENDING to learner site_id=7, slot=40
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.666 | ForwardToLearner: par_id=0, slot=40, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.666 | ForwardToLearner: SENDING to learner site_id=3, slot=40
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.667 | ForwardToLearner: par_id=2, slot=38, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.667 | ForwardToLearner: SENDING to learner site_id=11, slot=38
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.671 | ForwardToLearner: par_id=1, slot=41, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.671 | ForwardToLearner: SENDING to learner site_id=7, slot=41
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.675 | ForwardToLearner: par_id=0, slot=41, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.675 | ForwardToLearner: SENDING to learner site_id=3, slot=41
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.675 | ForwardToLearner: par_id=2, slot=39, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.675 | ForwardToLearner: SENDING to learner site_id=11, slot=39
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.678 | ForwardToLearner: par_id=1, slot=42, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.678 | ForwardToLearner: SENDING to learner site_id=7, slot=42
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.679 | ForwardToLearner: par_id=2, slot=40, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.679 | ForwardToLearner: SENDING to learner site_id=11, slot=40
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.685 | ForwardToLearner: par_id=2, slot=41, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.685 | ForwardToLearner: SENDING to learner site_id=11, slot=41
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.686 | ForwardToLearner: par_id=0, slot=42, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.686 | ForwardToLearner: SENDING to learner site_id=3, slot=42
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.691 | ForwardToLearner: par_id=1, slot=43, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.691 | ForwardToLearner: SENDING to learner site_id=7, slot=43
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.692 | ForwardToLearner: par_id=1, slot=44, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.692 | ForwardToLearner: SENDING to learner site_id=7, slot=44
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.694 | ForwardToLearner: par_id=2, slot=42, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.694 | ForwardToLearner: SENDING to learner site_id=11, slot=42
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.696 | ForwardToLearner: par_id=0, slot=43, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.696 | ForwardToLearner: SENDING to learner site_id=3, slot=43
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.701 | ForwardToLearner: par_id=2, slot=43, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.701 | ForwardToLearner: SENDING to learner site_id=11, slot=43
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.702 | ForwardToLearner: par_id=1, slot=45, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.702 | ForwardToLearner: SENDING to learner site_id=7, slot=45
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.704 | ForwardToLearner: par_id=0, slot=44, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.704 | ForwardToLearner: SENDING to learner site_id=3, slot=44
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.707 | ForwardToLearner: par_id=2, slot=44, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.707 | ForwardToLearner: SENDING to learner site_id=11, slot=44
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.711 | ForwardToLearner: par_id=1, slot=46, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.711 | ForwardToLearner: SENDING to learner site_id=7, slot=46
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.712 | ForwardToLearner: par_id=0, slot=45, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.712 | ForwardToLearner: SENDING to learner site_id=3, slot=45
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.715 | ForwardToLearner: par_id=0, slot=46, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.715 | ForwardToLearner: SENDING to learner site_id=3, slot=46
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.716 | ForwardToLearner: par_id=1, slot=47, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.717 | ForwardToLearner: SENDING to learner site_id=7, slot=47
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.716 | ForwardToLearner: par_id=2, slot=45, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.717 | ForwardToLearner: SENDING to learner site_id=11, slot=45
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.721 | ForwardToLearner: par_id=0, slot=47, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.721 | ForwardToLearner: SENDING to learner site_id=3, slot=47
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.727 | ForwardToLearner: par_id=1, slot=48, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.727 | ForwardToLearner: SENDING to learner site_id=7, slot=48
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.728 | ForwardToLearner: par_id=2, slot=46, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.728 | ForwardToLearner: SENDING to learner site_id=11, slot=46
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.730 | ForwardToLearner: par_id=0, slot=48, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.730 | ForwardToLearner: SENDING to learner site_id=3, slot=48
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.732 | ForwardToLearner: par_id=2, slot=47, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.732 | ForwardToLearner: SENDING to learner site_id=11, slot=47
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.735 | ForwardToLearner: par_id=1, slot=49, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.735 | ForwardToLearner: SENDING to learner site_id=7, slot=49
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.736 | ForwardToLearner: par_id=0, slot=49, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.736 | ForwardToLearner: par_id=2, slot=48, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.736 | ForwardToLearner: SENDING to learner site_id=11, slot=48
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.736 | ForwardToLearner: SENDING to learner site_id=3, slot=49
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.740 | ForwardToLearner: par_id=1, slot=50, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.740 | ForwardToLearner: SENDING to learner site_id=7, slot=50
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.744 | ForwardToLearner: par_id=2, slot=49, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.744 | ForwardToLearner: SENDING to learner site_id=11, slot=49
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.746 | ForwardToLearner: par_id=0, slot=50, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.746 | ForwardToLearner: SENDING to learner site_id=3, slot=50
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.747 | ForwardToLearner: par_id=1, slot=51, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.748 | ForwardToLearner: SENDING to learner site_id=7, slot=51
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.750 | ForwardToLearner: par_id=2, slot=50, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.750 | ForwardToLearner: SENDING to learner site_id=11, slot=50
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.754 | ForwardToLearner: par_id=1, slot=52, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.754 | ForwardToLearner: SENDING to learner site_id=7, slot=52
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.756 | ForwardToLearner: par_id=0, slot=51, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.756 | ForwardToLearner: SENDING to learner site_id=3, slot=51
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.761 | ForwardToLearner: par_id=2, slot=51, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.761 | ForwardToLearner: SENDING to learner site_id=11, slot=51
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.762 | ForwardToLearner: par_id=0, slot=52, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.762 | ForwardToLearner: SENDING to learner site_id=3, slot=52
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.764 | ForwardToLearner: par_id=0, slot=53, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.764 | ForwardToLearner: SENDING to learner site_id=3, slot=53
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.766 | ForwardToLearner: par_id=1, slot=53, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.766 | ForwardToLearner: SENDING to learner site_id=7, slot=53
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.767 | ForwardToLearner: par_id=2, slot=52, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.767 | ForwardToLearner: SENDING to learner site_id=11, slot=52
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.770 | ForwardToLearner: par_id=1, slot=54, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.771 | ForwardToLearner: SENDING to learner site_id=7, slot=54
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.773 | ForwardToLearner: par_id=2, slot=53, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.774 | ForwardToLearner: SENDING to learner site_id=11, slot=53
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.775 | ForwardToLearner: par_id=0, slot=54, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.775 | ForwardToLearner: SENDING to learner site_id=3, slot=54
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.777 | ForwardToLearner: par_id=0, slot=55, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.777 | ForwardToLearner: SENDING to learner site_id=3, slot=55
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.780 | ForwardToLearner: par_id=1, slot=55, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.780 | ForwardToLearner: SENDING to learner site_id=7, slot=55
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.781 | ForwardToLearner: par_id=2, slot=54, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.781 | ForwardToLearner: SENDING to learner site_id=11, slot=54
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.784 | ForwardToLearner: par_id=1, slot=56, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.785 | ForwardToLearner: SENDING to learner site_id=7, slot=56
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.785 | ForwardToLearner: par_id=0, slot=56, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.786 | ForwardToLearner: SENDING to learner site_id=3, slot=56
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.788 | ForwardToLearner: par_id=2, slot=55, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.788 | ForwardToLearner: SENDING to learner site_id=11, slot=55
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.791 | ForwardToLearner: par_id=1, slot=57, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.791 | ForwardToLearner: SENDING to learner site_id=7, slot=57
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.792 | ForwardToLearner: par_id=0, slot=57, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.792 | ForwardToLearner: SENDING to learner site_id=3, slot=57
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.797 | ForwardToLearner: par_id=2, slot=56, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.797 | ForwardToLearner: par_id=1, slot=58, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.797 | ForwardToLearner: SENDING to learner site_id=7, slot=58
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.798 | ForwardToLearner: SENDING to learner site_id=11, slot=56
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.799 | ForwardToLearner: par_id=0, slot=58, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.799 | ForwardToLearner: SENDING to learner site_id=3, slot=58
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.803 | ForwardToLearner: par_id=2, slot=57, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.803 | ForwardToLearner: SENDING to learner site_id=11, slot=57
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.805 | ForwardToLearner: par_id=0, slot=59, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.805 | ForwardToLearner: SENDING to learner site_id=3, slot=59
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.806 | ForwardToLearner: par_id=1, slot=59, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.806 | ForwardToLearner: SENDING to learner site_id=7, slot=59
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.808 | ForwardToLearner: par_id=2, slot=58, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.808 | ForwardToLearner: SENDING to learner site_id=11, slot=58
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.815 | ForwardToLearner: par_id=0, slot=60, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.815 | ForwardToLearner: SENDING to learner site_id=3, slot=60
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.815 | ForwardToLearner: par_id=1, slot=60, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.815 | ForwardToLearner: SENDING to learner site_id=7, slot=60
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.817 | ForwardToLearner: par_id=1, slot=61, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.818 | ForwardToLearner: SENDING to learner site_id=7, slot=61
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.818 | ForwardToLearner: par_id=2, slot=59, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.818 | ForwardToLearner: SENDING to learner site_id=11, slot=59
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.821 | ForwardToLearner: par_id=0, slot=61, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.821 | ForwardToLearner: SENDING to learner site_id=3, slot=61
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.824 | ForwardToLearner: par_id=2, slot=60, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.824 | ForwardToLearner: SENDING to learner site_id=11, slot=60
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.829 | ForwardToLearner: par_id=2, slot=61, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.829 | ForwardToLearner: SENDING to learner site_id=11, slot=61
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.831 | ForwardToLearner: par_id=1, slot=62, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.832 | ForwardToLearner: SENDING to learner site_id=7, slot=62
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.832 | ForwardToLearner: par_id=0, slot=62, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.832 | ForwardToLearner: SENDING to learner site_id=3, slot=62
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.837 | ForwardToLearner: par_id=0, slot=63, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.837 | ForwardToLearner: SENDING to learner site_id=3, slot=63
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.838 | ForwardToLearner: par_id=2, slot=62, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.838 | ForwardToLearner: SENDING to learner site_id=11, slot=62
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.838 | ForwardToLearner: par_id=1, slot=63, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.838 | ForwardToLearner: SENDING to learner site_id=7, slot=63
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.843 | ForwardToLearner: par_id=1, slot=64, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.843 | ForwardToLearner: SENDING to learner site_id=7, slot=64
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.844 | ForwardToLearner: par_id=2, slot=63, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.844 | ForwardToLearner: SENDING to learner site_id=11, slot=63
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.848 | ForwardToLearner: par_id=0, slot=64, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.848 | ForwardToLearner: SENDING to learner site_id=3, slot=64
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.852 | ForwardToLearner: par_id=1, slot=65, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.852 | ForwardToLearner: par_id=0, slot=65, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.853 | ForwardToLearner: SENDING to learner site_id=3, slot=65
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.852 | ForwardToLearner: SENDING to learner site_id=7, slot=65
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.856 | ForwardToLearner: par_id=2, slot=64, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.856 | ForwardToLearner: SENDING to learner site_id=11, slot=64
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.859 | ForwardToLearner: par_id=1, slot=66, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.859 | ForwardToLearner: SENDING to learner site_id=7, slot=66
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.860 | ForwardToLearner: par_id=0, slot=66, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.860 | ForwardToLearner: SENDING to learner site_id=3, slot=66
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.864 | ForwardToLearner: par_id=2, slot=65, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.864 | ForwardToLearner: SENDING to learner site_id=11, slot=65
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.866 | ForwardToLearner: par_id=1, slot=67, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.866 | ForwardToLearner: SENDING to learner site_id=7, slot=67
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.867 | ForwardToLearner: par_id=0, slot=67, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.867 | ForwardToLearner: SENDING to learner site_id=3, slot=67
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.868 | ForwardToLearner: par_id=2, slot=66, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.868 | ForwardToLearner: SENDING to learner site_id=11, slot=66
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.876 | ForwardToLearner: par_id=2, slot=67, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.876 | ForwardToLearner: SENDING to learner site_id=11, slot=67
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.877 | ForwardToLearner: par_id=0, slot=68, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.877 | ForwardToLearner: SENDING to learner site_id=3, slot=68
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.879 | ForwardToLearner: par_id=1, slot=68, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.879 | ForwardToLearner: SENDING to learner site_id=7, slot=68
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.881 | ForwardToLearner: par_id=0, slot=69, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.882 | ForwardToLearner: SENDING to learner site_id=3, slot=69
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.883 | ForwardToLearner: par_id=1, slot=69, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.883 | ForwardToLearner: SENDING to learner site_id=7, slot=69
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.886 | ForwardToLearner: par_id=1, slot=70, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.886 | ForwardToLearner: SENDING to learner site_id=7, slot=70
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.887 | ForwardToLearner: par_id=0, slot=70, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.887 | ForwardToLearner: SENDING to learner site_id=3, slot=70
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.888 | ForwardToLearner: par_id=2, slot=68, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.888 | ForwardToLearner: SENDING to learner site_id=11, slot=68
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.893 | ForwardToLearner: par_id=1, slot=71, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.893 | ForwardToLearner: SENDING to learner site_id=7, slot=71
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.894 | ForwardToLearner: par_id=0, slot=71, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.894 | ForwardToLearner: SENDING to learner site_id=3, slot=71
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.895 | ForwardToLearner: par_id=2, slot=69, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.895 | ForwardToLearner: SENDING to learner site_id=11, slot=69
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.901 | ForwardToLearner: par_id=1, slot=72, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.901 | ForwardToLearner: SENDING to learner site_id=7, slot=72
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.903 | ForwardToLearner: par_id=0, slot=72, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.903 | ForwardToLearner: SENDING to learner site_id=3, slot=72
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.907 | ForwardToLearner: par_id=2, slot=70, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.907 | ForwardToLearner: SENDING to learner site_id=11, slot=70
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.909 | ForwardToLearner: par_id=1, slot=73, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.909 | ForwardToLearner: SENDING to learner site_id=7, slot=73
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.909 | ForwardToLearner: par_id=0, slot=73, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.909 | ForwardToLearner: SENDING to learner site_id=3, slot=73
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.909 | ForwardToLearner: par_id=2, slot=71, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.909 | ForwardToLearner: SENDING to learner site_id=11, slot=71
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.917 | ForwardToLearner: par_id=2, slot=72, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.917 | ForwardToLearner: SENDING to learner site_id=11, slot=72
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.917 | ForwardToLearner: par_id=1, slot=74, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.917 | ForwardToLearner: SENDING to learner site_id=7, slot=74
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.923 | ForwardToLearner: par_id=2, slot=73, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.923 | ForwardToLearner: SENDING to learner site_id=11, slot=73
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.923 | ForwardToLearner: par_id=0, slot=74, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.923 | ForwardToLearner: SENDING to learner site_id=3, slot=74
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.926 | ForwardToLearner: par_id=0, slot=75, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.926 | ForwardToLearner: SENDING to learner site_id=3, slot=75
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.929 | ForwardToLearner: par_id=1, slot=75, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.929 | ForwardToLearner: SENDING to learner site_id=7, slot=75
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.931 | ForwardToLearner: par_id=2, slot=74, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.931 | ForwardToLearner: SENDING to learner site_id=11, slot=74
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.933 | ForwardToLearner: par_id=1, slot=76, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.933 | ForwardToLearner: SENDING to learner site_id=7, slot=76
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.936 | ForwardToLearner: par_id=2, slot=75, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.936 | ForwardToLearner: SENDING to learner site_id=11, slot=75
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.939 | ForwardToLearner: par_id=0, slot=76, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.939 | ForwardToLearner: SENDING to learner site_id=3, slot=76
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.942 | ForwardToLearner: par_id=1, slot=77, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.942 | ForwardToLearner: SENDING to learner site_id=7, slot=77
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.946 | ForwardToLearner: par_id=0, slot=77, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.946 | ForwardToLearner: SENDING to learner site_id=3, slot=77
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.947 | ForwardToLearner: par_id=2, slot=76, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.947 | ForwardToLearner: SENDING to learner site_id=11, slot=76
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.947 | ForwardToLearner: par_id=0, slot=78, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.947 | ForwardToLearner: SENDING to learner site_id=3, slot=78
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.950 | ForwardToLearner: par_id=1, slot=78, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.950 | ForwardToLearner: SENDING to learner site_id=7, slot=78
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.953 | ForwardToLearner: par_id=2, slot=77, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.953 | ForwardToLearner: SENDING to learner site_id=11, slot=77
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.955 | ForwardToLearner: par_id=1, slot=79, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.955 | ForwardToLearner: SENDING to learner site_id=7, slot=79
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.956 | ForwardToLearner: par_id=0, slot=79, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.956 | ForwardToLearner: SENDING to learner site_id=3, slot=79
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.959 | ForwardToLearner: par_id=2, slot=78, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.959 | ForwardToLearner: SENDING to learner site_id=11, slot=78
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.961 | ForwardToLearner: par_id=1, slot=80, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.962 | ForwardToLearner: SENDING to learner site_id=7, slot=80
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.965 | ForwardToLearner: par_id=0, slot=80, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.965 | ForwardToLearner: SENDING to learner site_id=3, slot=80
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.969 | ForwardToLearner: par_id=0, slot=81, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.969 | ForwardToLearner: SENDING to learner site_id=3, slot=81
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.970 | ForwardToLearner: par_id=2, slot=79, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.970 | ForwardToLearner: SENDING to learner site_id=11, slot=79
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.973 | ForwardToLearner: par_id=1, slot=81, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.973 | ForwardToLearner: SENDING to learner site_id=7, slot=81
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.978 | ForwardToLearner: par_id=0, slot=82, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.978 | ForwardToLearner: SENDING to learner site_id=3, slot=82
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.979 | ForwardToLearner: par_id=2, slot=80, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.980 | ForwardToLearner: SENDING to learner site_id=11, slot=80
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.981 | ForwardToLearner: par_id=1, slot=82, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.981 | ForwardToLearner: SENDING to learner site_id=7, slot=82
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.984 | ForwardToLearner: par_id=2, slot=81, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.984 | ForwardToLearner: SENDING to learner site_id=11, slot=81
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.989 | ForwardToLearner: par_id=0, slot=83, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.989 | ForwardToLearner: SENDING to learner site_id=3, slot=83
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.989 | ForwardToLearner: par_id=1, slot=83, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.990 | ForwardToLearner: SENDING to learner site_id=7, slot=83
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.991 | ForwardToLearner: par_id=2, slot=82, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.991 | ForwardToLearner: SENDING to learner site_id=11, slot=82
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.993 | ForwardToLearner: par_id=0, slot=84, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.993 | ForwardToLearner: SENDING to learner site_id=3, slot=84
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.996 | ForwardToLearner: par_id=1, slot=84, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.997 | ForwardToLearner: SENDING to learner site_id=7, slot=84
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.998 | ForwardToLearner: par_id=2, slot=83, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:10.998 | ForwardToLearner: SENDING to learner site_id=11, slot=83
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:10.002 | ForwardToLearner: par_id=1, slot=85, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.002 | ForwardToLearner: SENDING to learner site_id=7, slot=85
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.003 | ForwardToLearner: par_id=0, slot=85, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.003 | ForwardToLearner: SENDING to learner site_id=3, slot=85
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.005 | ForwardToLearner: par_id=2, slot=84, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.005 | ForwardToLearner: SENDING to learner site_id=11, slot=84
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.006 | ForwardToLearner: par_id=0, slot=86, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.006 | ForwardToLearner: SENDING to learner site_id=3, slot=86
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.013 | ForwardToLearner: par_id=1, slot=86, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.013 | ForwardToLearner: SENDING to learner site_id=7, slot=86
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.015 | ForwardToLearner: par_id=2, slot=85, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.015 | ForwardToLearner: SENDING to learner site_id=11, slot=85
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.017 | ForwardToLearner: par_id=2, slot=86, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.017 | ForwardToLearner: SENDING to learner site_id=11, slot=86
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.023 | ForwardToLearner: par_id=1, slot=87, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.023 | ForwardToLearner: SENDING to learner site_id=7, slot=87
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.024 | ForwardToLearner: par_id=0, slot=87, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.024 | ForwardToLearner: SENDING to learner site_id=3, slot=87
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.024 | ForwardToLearner: par_id=2, slot=87, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.024 | ForwardToLearner: SENDING to learner site_id=11, slot=87
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.024 | ForwardToLearner: par_id=0, slot=88, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.024 | ForwardToLearner: SENDING to learner site_id=3, slot=88
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.030 | ForwardToLearner: par_id=1, slot=88, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.030 | ForwardToLearner: SENDING to learner site_id=7, slot=88
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.032 | ForwardToLearner: par_id=0, slot=89, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.033 | ForwardToLearner: SENDING to learner site_id=3, slot=89
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.036 | ForwardToLearner: par_id=2, slot=88, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.036 | ForwardToLearner: SENDING to learner site_id=11, slot=88
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.037 | ForwardToLearner: par_id=1, slot=89, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.037 | ForwardToLearner: SENDING to learner site_id=7, slot=89
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.037 | ForwardToLearner: par_id=0, slot=90, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.037 | ForwardToLearner: SENDING to learner site_id=3, slot=90
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.041 | ForwardToLearner: par_id=2, slot=89, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.041 | ForwardToLearner: SENDING to learner site_id=11, slot=89
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.044 | ForwardToLearner: par_id=0, slot=91, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.044 | ForwardToLearner: SENDING to learner site_id=3, slot=91
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.045 | ForwardToLearner: par_id=2, slot=90, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.045 | ForwardToLearner: SENDING to learner site_id=11, slot=90
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.047 | ForwardToLearner: par_id=1, slot=90, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.047 | ForwardToLearner: SENDING to learner site_id=7, slot=90
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.048 | ForwardToLearner: par_id=0, slot=92, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.048 | ForwardToLearner: SENDING to learner site_id=3, slot=92
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.053 | ForwardToLearner: par_id=2, slot=91, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.053 | ForwardToLearner: SENDING to learner site_id=11, slot=91
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.054 | ForwardToLearner: par_id=0, slot=93, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.054 | ForwardToLearner: SENDING to learner site_id=3, slot=93
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.057 | ForwardToLearner: par_id=1, slot=91, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.057 | ForwardToLearner: SENDING to learner site_id=7, slot=91
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.060 | ForwardToLearner: par_id=1, slot=92, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.060 | ForwardToLearner: SENDING to learner site_id=7, slot=92
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.065 | ForwardToLearner: par_id=2, slot=92, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.065 | ForwardToLearner: SENDING to learner site_id=11, slot=92
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.066 | ForwardToLearner: par_id=0, slot=94, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.066 | ForwardToLearner: SENDING to learner site_id=3, slot=94
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.066 | ForwardToLearner: par_id=1, slot=93, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.067 | ForwardToLearner: SENDING to learner site_id=7, slot=93
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.070 | ForwardToLearner: par_id=2, slot=93, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.070 | ForwardToLearner: SENDING to learner site_id=11, slot=93
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.071 | ForwardToLearner: par_id=0, slot=95, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.071 | ForwardToLearner: SENDING to learner site_id=3, slot=95
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.072 | ForwardToLearner: par_id=1, slot=94, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.072 | ForwardToLearner: SENDING to learner site_id=7, slot=94
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.079 | ForwardToLearner: par_id=0, slot=96, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.079 | ForwardToLearner: SENDING to learner site_id=3, slot=96
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.080 | ForwardToLearner: par_id=2, slot=94, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.080 | ForwardToLearner: SENDING to learner site_id=11, slot=94
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.082 | ForwardToLearner: par_id=1, slot=95, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.082 | ForwardToLearner: SENDING to learner site_id=7, slot=95
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.088 | ForwardToLearner: par_id=0, slot=97, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.088 | ForwardToLearner: SENDING to learner site_id=3, slot=97
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.089 | ForwardToLearner: par_id=1, slot=96, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.089 | ForwardToLearner: SENDING to learner site_id=7, slot=96
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.092 | ForwardToLearner: par_id=2, slot=95, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.092 | ForwardToLearner: SENDING to learner site_id=11, slot=95
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.095 | ForwardToLearner: par_id=2, slot=96, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.095 | ForwardToLearner: SENDING to learner site_id=11, slot=96
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.097 | ForwardToLearner: par_id=1, slot=97, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.097 | ForwardToLearner: SENDING to learner site_id=7, slot=97
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.097 | ForwardToLearner: par_id=0, slot=98, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.097 | ForwardToLearner: SENDING to learner site_id=3, slot=98
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.106 | ForwardToLearner: par_id=2, slot=97, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.107 | ForwardToLearner: SENDING to learner site_id=11, slot=97
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.107 | ForwardToLearner: par_id=0, slot=99, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.107 | ForwardToLearner: SENDING to learner site_id=3, slot=99
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.108 | ForwardToLearner: par_id=1, slot=98, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.108 | ForwardToLearner: SENDING to learner site_id=7, slot=98
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.110 | ForwardToLearner: par_id=1, slot=99, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.111 | ForwardToLearner: SENDING to learner site_id=7, slot=99
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.115 | ForwardToLearner: par_id=0, slot=100, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.115 | ForwardToLearner: SENDING to learner site_id=3, slot=100
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.115 | ForwardToLearner: par_id=2, slot=98, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.115 | ForwardToLearner: SENDING to learner site_id=11, slot=98
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.119 | ForwardToLearner: par_id=1, slot=100, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.119 | ForwardToLearner: SENDING to learner site_id=7, slot=100
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.124 | ForwardToLearner: par_id=2, slot=99, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.124 | ForwardToLearner: SENDING to learner site_id=11, slot=99
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.132 | ForwardToLearner: par_id=2, slot=100, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.132 | ForwardToLearner: SENDING to learner site_id=11, slot=100
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.140 | ForwardToLearner: par_id=1, slot=101, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.140 | ForwardToLearner: SENDING to learner site_id=7, slot=101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:140] 2025-12-14 14:34:11.140 | Recieved a zero length log
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.141 | ForwardToLearner: par_id=2, slot=101, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.142 | ForwardToLearner: SENDING to learner site_id=11, slot=101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:140] 2025-12-14 14:34:11.142 | Recieved a zero length log
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:125] 2025-12-14 14:34:11.143 | ForwardToLearner: par_id=0, slot=101, n=3, proxies.size=4, batch_idx=0
+I [/home/eriks972/mako/src/deptran/paxos/commo.cc:151] 2025-12-14 14:34:11.143 | ForwardToLearner: SENDING to learner site_id=3, slot=101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:140] 2025-12-14 14:34:11.143 | Recieved a zero length log
+p1, received ending: 3, received msg: 303
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:999] 2025-12-14 14:34:14.295 | shutdown Server Control Service after task finish total submit 0
+I [/home/eriks972/mako/src/deptran/benchmark_control_rpc.cc:43] 2025-12-14 14:34:14.295 | Shutdown Server Control Service
+I [/home/eriks972/mako/src/deptran/benchmark_control_rpc.cc:43] 2025-12-14 14:34:14.295 | Shutdown Server Control Service
+I [/home/eriks972/mako/src/deptran/benchmark_control_rpc.cc:43] 2025-12-14 14:34:14.295 | Shutdown Server Control Service
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:311] 2025-12-14 14:34:14.301 | all server workers have shut down.
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:288] 2025-12-14 14:34:14.401 | site s201 deleting services, num: 1 0 0 0
+I [/home/eriks972/mako/src/deptran/paxos/server.h:47] 2025-12-14 14:34:14.457 | site par 0, loc 1: prepare 0, accept 101, commit 101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:288] 2025-12-14 14:34:14.458 | site s202 deleting services, num: 1 0 0 0
+I [/home/eriks972/mako/src/deptran/paxos/server.h:47] 2025-12-14 14:34:14.513 | site par 1, loc 1: prepare 0, accept 101, commit 101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:288] 2025-12-14 14:34:14.513 | site s203 deleting services, num: 1 0 0 0
+I [/home/eriks972/mako/src/deptran/paxos/server.h:47] 2025-12-14 14:34:14.567 | site par 2, loc 1: prepare 0, accept 101, commit 101
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:649] 2025-12-14 14:34:14.619 | Ending worker with n_tot 0 and n_current 0
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:649] 2025-12-14 14:34:14.636 | Ending worker with n_tot 0 and n_current 0
+I [/home/eriks972/mako/src/deptran/paxos_worker.cc:649] 2025-12-14 14:34:14.652 | Ending worker with n_tot 0 and n_current 0
+I [/home/eriks972/mako/src/deptran/paxos_main_helper.cc:332] 2025-12-14 14:34:14.667 | exit process.
+[p1 committed]: 303(follower/learner), 0(leader), endReceived: 3, leaderEndReceived:0
+[[32mPASS[0m] committed logs count verify
