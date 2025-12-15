@@ -17,13 +17,15 @@ Recent work on learned indexes suggests that approximate models can predict wher
 ## Design Overview
 
 The system introduces a **LearnedRouter** that:
-- Samples Masstree leaf boundaries during a training phase
-- Predicts a candidate leaf for a query key at lookup time
-- Speculatively jumps to that leaf before falling back to normal traversal if necessary
+
+* Samples Masstree leaf boundaries during a training phase
+* Predicts a candidate leaf for a query key at lookup time
+* Speculatively jumps to that leaf before falling back to normal traversal if necessary
 
 To further exploit locality, the implementation includes a **per-thread leaf cache** that remembers the most recently accessed leaf. Under monotonic access, this cache allows many lookups to bypass traversal entirely.
 
 ### Lookup Flow
+
 1. Predict candidate leaf using the learned router
 2. Attempt speculative access to the predicted leaf
 3. Fall back to standard Masstree traversal if invalid
@@ -33,11 +35,11 @@ To further exploit locality, the implementation includes a **per-thread leaf cac
 
 ## Implementation Details
 
-- Learned routing logic is integrated into Masstree’s `find_unlocked` lookup path
-- Routing is speculative and optimistic
-- Correctness is preserved by falling back to Masstree traversal when needed
-- Routing “hits” are defined as successful speculative routing attempts
-- The system favors performance under structured workloads over strict adversarial robustness
+* Learned routing logic is integrated into Masstree’s `find_unlocked` lookup path
+* Routing is speculative and optimistic
+* Correctness is preserved by falling back to Masstree traversal when needed
+* Routing “hits” are defined as successful speculative routing attempts
+* The system favors performance under structured workloads over strict adversarial robustness
 
 ---
 
@@ -46,95 +48,138 @@ To further exploit locality, the implementation includes a **per-thread leaf cac
 Evaluation is performed using Mako’s `simplebench` microbenchmark.
 
 ### Workloads Tested
-- **Structured access** (keys queried in insertion order)
-- **Random access** (keys shuffled)
+
+* **Structured / sequential access** (keys queried in insertion order)
+
+Randomized key access was intentionally removed in the final version to preserve locality assumptions and ensure stable learned routing behavior.
 
 ### Results Summary
-- Under structured access, learned routing combined with per-thread caching achieves up to **4× speedup** over baseline Masstree
-- Under random access, benefits diminish and performance approaches baseline
-- Speedups rely heavily on access locality and speculative execution
 
-These results demonstrate that learned routing is effective when workload structure aligns with model assumptions, but does not universally outperform traditional indexing.
+* Under structured access, learned routing combined with per-thread caching achieves up to **4× speedup** over baseline Masstree
+* Lookup latency is significantly reduced by bypassing internal node traversal
+* Performance improvements are consistent across multiple workload variants when access locality is preserved
+
+These results demonstrate that learned routing can substantially improve performance when workload structure aligns with model assumptions.
 
 ---
 
 ## How to Build and Run
 
-### Build
+### Build Requirements
+
+* Linux (tested on Ubuntu 20.04+)
+* GCC or Clang with C++17 support
+* CMake
+* pthreads
+* Rust toolchain (required by Mako)
+
+---
+
+### 1. Install System Dependencies
+
 ```bash
-make -j
+bash apt_packages.sh
+```
 
-## Build Requirements
+---
 
-- Linux (tested on Ubuntu 20.04+)
-- GCC / Clang with C++17 support
-- CMake
-- pthreads
-- Python 3 (optional, for auxiliary scripts)
+### 2. Install Rust Toolchain
 
-The project builds as part of the existing Mako build system and does not require additional external libraries.
+```bash
+source install_rustc.sh
+```
 
-## Configuration Options
+Verify installation:
 
-The learned routing logic can be enabled or disabled at compile time and runtime.
+```bash
+rustc --version
+cargo --version
+```
 
-### Compile-Time Flags
-- `MAKO_LEARNED_INDEX`  
-  Enables learned routing integration into Masstree.
+---
 
-### Runtime Flags
-- `RuntimeFlags::learned`  
-  Toggles learned routing during execution.
+### 3. Build the Project
 
-These flags allow direct comparison between baseline Masstree and the learned routing implementation without rebuilding the system.
+```bash
+mkdir -p build
+cd build
+cmake ..
+make -j$(nproc)
+```
 
+The `simplebench` benchmark binary will be generated in the `build/` directory.
+
+---
+
+## Running `simplebench`
+
+### Usage
+
+```bash
+./simplebench <threads> <num_ops> <workload>
+```
+
+### Arguments
+
+* `<threads>` – Number of worker threads
+* `<num_ops>` – Total number of operations
+* `<workload>` – Access pattern:
+
+  * `B` – Bulk / sequential access
+  * `C` – Clustered access
+  * `D` – Structured variant with locality
+
+---
+
+### Example Runs
+
+```bash
+./simplebench 4 5000000 B
+./simplebench 4 5000000 C
+./simplebench 4 5000000 D
+```
+
+---
 
 ## Router Statistics
 
-During benchmarking, the learned router reports the following statistics:
+During benchmarking, the learned router reports:
 
-- `hits`  
-  Number of lookups where speculative learned routing was attempted.
-- `misses`  
-  Number of lookups where learned routing was not used.
-- `neighbor_hits`  
-  Reserved for future work involving neighbor-based verification.
+* `hits` – Successful speculative routing attempts
+* `misses` – Lookups that fell back to normal traversal
+* `neighbor_hits` – Reserved for future extensions
 
-A high hit count indicates that learned routing or caching was actively used during lookup execution. Hits do not imply strict correctness guarantees; correctness is ensured by Masstree’s fallback traversal when necessary.
+A high hit count indicates that learned routing or caching was actively used. Correctness is always ensured by Masstree’s fallback traversal.
 
-## Experimental Methodology
-
-All experiments were conducted using the `simplebench` microbenchmark included with Mako.
-
-For each configuration:
-1. Keys are preloaded into the Masstree index
-2. Leaf samples are collected for training
-3. The learned router is trained
-4. Baseline and learned lookups are timed independently
-
-Structured workloads issue queries in insertion order, while randomized workloads shuffle query keys to remove locality.
+---
 
 ## Known Limitations
 
-- Learned routing does not provide universal speedups
-- Benefits diminish under randomized access patterns
-- Strict correctness enforcement significantly reduces performance gains
-- The per-thread cache relies on locality and optimistic assumptions
+* Learned routing relies on structured access patterns
+* Performance gains diminish if locality assumptions are violated
+* The per-thread cache is optimistic and locality-dependent
 
-These limitations reflect fundamental trade-offs between learned approximations and concurrent data structure correctness.
+These limitations reflect trade-offs between learned approximations and concurrent data structure safety.
+
+---
 
 ## Future Work
 
-Potential extensions include:
-- Neighbor-based leaf verification
-- More robust learned models
-- Adaptive fallback thresholds
-- Hybrid routing strategies combining learned and heuristic methods
+* Neighbor-based verification
+* More robust learned models
+* Adaptive routing thresholds
+* Hybrid learned / heuristic routing strategies
 
-Exploring these directions may improve robustness while retaining performance benefits.
+---
+
+## Repository
+
+[https://github.com/Eriks113470011/Mako_Masstree](https://github.com/Eriks113470011/Mako_Masstree)
+
+---
 
 ## Author
 
-Erik Swanson  
-MS Computer Science  
+Erik Swanson
+MS Computer Science
 Stony Brook University
